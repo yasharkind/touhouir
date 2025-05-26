@@ -3,7 +3,7 @@ name: 🚀 Deploy React App to cPanel via FTP
 on:
   push:
     branches:
-      - main  # Change if using a different branch
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22'  # or your version
+          node-version: '22'
 
       - name: Install dependencies
         run: npm ci
@@ -30,6 +30,6 @@ jobs:
           server: ${{ secrets.CPANEL_HOST }}
           username: ${{ secrets.CPANEL_USERNAME }}
           password: ${{ secrets.CPANEL_PASSWORD }}
-          port: ${{ secrets.CPANEL_PORT }} # Optional (defaults to 21)
+          port: ${{ secrets.CPANEL_PORT }}
           local-dir: build/
-          server-dir: public_html/  # Change if deploying elsewhere
+          server-dir: public_html/ 
