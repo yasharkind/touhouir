@@ -38,4 +38,4 @@ jobs:
           # Optional: disable host key checking for smooth CI (not recommended for super-secure envs)
           echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
 
-          rsync -avz -e "ssh -p $CPANEL_PORT" --delete build/ $CPANEL_USERNAME@$CPANEL_HOST:$CPANEL_DEST_DIR
+          rsync -avz -e "ssh -p $CPANEL_PORT" --delete dist/ $CPANEL_USERNAME@$CPANEL_HOST:$CPANEL_DEST_DIR
