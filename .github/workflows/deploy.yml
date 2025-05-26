@@ -32,4 +32,4 @@ jobs:
           password: ${{ secrets.CPANEL_PASSWORD }}
           port: ${{ secrets.CPANEL_PORT }}
           local-dir: dist/
-          server-dir: public_html/ 
+          server-dir: public_html/
