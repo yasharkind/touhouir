@@ -30,6 +30,6 @@ jobs:
           server: ${{ secrets.CPANEL_HOST }}
           username: ${{ secrets.CPANEL_USERNAME }}
           password: ${{ secrets.CPANEL_PASSWORD }}
-          port: ${{ secrets.CPANEL_PORT }} 
+          port: ${{ secrets.CPANEL_PORT }}
           local-dir: dist/
           server-dir: public_html/ 
