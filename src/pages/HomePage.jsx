@@ -13,7 +13,7 @@ const HomePage = () => {
     <>
 	<div className={`wip-alert ${wipDisplay}`} onClick={() => {toggleWipDisplay(() => "invisible")}} dir='rtl'>
 		<div style={{alignSelf: "center"}}>
-		سایت هنوز در هال ساخه شدن است. برای ثبت پیشنهادات وارد سرور دیسکور شوید
+		سایت هنوز در حال ساخه شدن است. برای ثبت پیشنهادات وارد سرور دیسکور شوید
 		</div>
 	</div>
 	  <TopBar />
