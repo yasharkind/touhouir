@@ -23,7 +23,7 @@
 
 @media (prefers-color-scheme: dark) {
   .scheme-home {
-    --discord-embed-shadow: #b9b2e0;
+    --discord-embed-shadow: #d5b2e0;
     --content-bg-color: #444;
     --content-text-color: #eee;
     --background-color-start: #441151;
