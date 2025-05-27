@@ -388,12 +388,12 @@
 .discord-embed-title,
 .discord-server-name,
 .footer-text {
-  color: #b9b2e0;
+  color: var(--background-color-start);
   text-align: center;
 }
 
 .footer-text {
-  color: #b9b2e0;
+  color: var(--background-color-start);
   margin: 48px;
 }
 
