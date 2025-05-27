@@ -25,7 +25,7 @@ const TopBar = () => {
                 
             </div>
             <div className="top-bar-left">
-                <h1 onClick={() => {navigate("/home")}}>touhou.ir</h1>
+                <div className="logo-title" onClick={() => {navigate("/home")}}>touhou.ir</div>
             </div>
         </div>
     </>

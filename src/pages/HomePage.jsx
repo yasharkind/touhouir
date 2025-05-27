@@ -9,8 +9,9 @@ import Footer from '../components/Footer'
 
 const HomePage = () => {
 	const [wipDisplay, toggleWipDisplay] = useState("")
-  return (
-    <>
+  return (<>
+    <div className="scheme-home">
+
 	<div className={`wip-alert ${wipDisplay}`} onClick={() => {toggleWipDisplay(() => "invisible")}} dir='rtl'>
 		<div style={{alignSelf: "center"}}>
 		سایت هنوز در حال ساخه شدن است. برای ثبت پیشنهادات وارد سرور دیسکور شوید
@@ -50,8 +51,8 @@ const HomePage = () => {
 		<CategoryBlock title="کاراکتر های توهو" img="characters.jpg" url="characters" />
 		<CategoryBlock title="سرور دیسکورد" img="discord.jpeg" url="https://discord.gg/k4KKB24aE8" />
 		</div>
-
-	  <Footer />
+		<Footer />
+	  </div>
 	  </div>
     </>
   )
