@@ -369,7 +369,7 @@
   text-align: right;
   align-items: flex-end;
   justify-content: flex-end;
-  border-top: solid 16px var(--topbar-border-color);
+  border-top: solid 4px #000;
   position: relative;
   z-index: 10;
 }
@@ -378,6 +378,11 @@
   background-color: var(--background-color-end);
   padding: 16px;
   border-radius: 16px;
+  border-top: solid 4px black;
+  border-left: solid 4px black;
+  border-right: solid 4px black;
+  box-shadow: 4px 4px 16px 4px black;
+
 }
 
 .discord-embed-title,
