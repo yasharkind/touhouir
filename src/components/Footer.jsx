@@ -8,6 +8,7 @@ const Footer = () => {
                     <div className="footer-text">
                         {locale.footertext}
                     </div>
+                    <a href={locale.serverlink}>
                     <div className="footer-discord-container">
                         <div className="discord-embed-title">
                             {locale.discordembedtitle}
@@ -22,9 +23,10 @@ const Footer = () => {
                                     <img src="/footer/remilia.gif"/>
                                 </div>
                             </div>
-                            <iframe src="https://discord.com/widget?id=721026661990137947&theme=dark" width="250" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
+                            <iframe className="discord-iframe" src="https://discord.com/widget?id=721026661990137947&theme=dark" width="250" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
         </>

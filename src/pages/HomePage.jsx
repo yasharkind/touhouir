@@ -49,7 +49,7 @@ const HomePage = () => {
 		<CategoryBlock title="مانگا های توهو" img="manga.jpg" url="manga" />
 		<CategoryBlock title="انیمه های توهو" img="anime.jpg" url="anime" />
 		<CategoryBlock title="کاراکتر های توهو" img="characters.jpg" url="characters" />
-		<CategoryBlock title="سرور دیسکورد" img="discord.jpeg" url="https://discord.gg/k4KKB24aE8" />
+		<CategoryBlock title="سرور دیسکورد" img="discord.jpeg" url={locale.serverlink} />
 		</div>
 		<Footer />
 	  </div>
