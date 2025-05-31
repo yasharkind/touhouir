@@ -1,14 +1,19 @@
 import locale from "../locale.json"
 
+const ResourceContent = (props) => {
+    return (
+        <div className="resource-content-container">
+            <div className="resource-content-title" dir="rtl" >{props.title}</div>
+            <a className="resource-content-link" target="_blank" href={props.link}>{props.linkTitle}</a>
+        </div>
+    )
+}
+
 const Footer = () => {
     return (
         <>
             <div className="footer-container">
-                <div className="m32">
-                    <div className="footer-text">
-                        {locale.footertext}
-                    </div>
-                    <a href={locale.serverlink}>
+                <a target="_blank" href={locale.serverlink}>
                     <div className="footer-discord-container">
                         <div className="discord-embed-title">
                             {locale.discordembedtitle}
@@ -20,13 +25,20 @@ const Footer = () => {
                                 </div>
                                 <div className="footer-discord-imgs">
                                     <img className="server-img" src="https://cdn.discordapp.com/icons/721026661990137947/a_01df922d2bf027cbbb3bc31c889685ef.gif" />
-                                    <img src="/footer/remilia.gif"/>
+                                    <img src="/footer/remilia.gif" />
                                 </div>
                             </div>
                             <iframe className="discord-iframe" src="https://discord.com/widget?id=721026661990137947&theme=dark" width="250" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
                         </div>
                     </div>
-                    </a>
+                </a>
+                <div className="footer-resources-container" >
+                    <div className="footer-resources-name" dir="rtl">{locale.resourcesname}</div>
+                    <div className="resource-contents" >
+                        <ResourceContent title={locale.resource1name} link={locale.resource1link} linkTitle={locale.resource1linkname} />
+                        <ResourceContent title={locale.resource2name} link={locale.resource2link} linkTitle={locale.resource2linkname} />
+                        <ResourceContent title={locale.resource3name} link={locale.resource3link} linkTitle={locale.resource3linkname} />
+                    </div>
                 </div>
             </div>
         </>

@@ -21,7 +21,7 @@ const TopBar = () => {
                 <div className="top-bar-seperator"/>
                 <TopBarButton icon="games-top.png" alt="Games" url="/games" name="Games"/>
                 <div className="top-bar-seperator"/>
-                <TopBarButton icon="music-top.png" alt="Music" url="/music" name="music"/>
+                <TopBarButton icon="music-top.png" alt="Music" url="/music" name="Music"/>
                 
             </div>
             <div className="top-bar-left">

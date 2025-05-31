@@ -3,6 +3,11 @@
   src: url(/fonts/B\ Koodak\ Bold_0.ttf)
 }
 
+@font-face {
+  font-family: dejavu;
+  src: url(/fonts/DejaVuSerif.ttf);
+}
+
 #root {
   --background-color-start: #f8e3ff;
   --background-color-end: #3e2c46;
@@ -32,7 +37,6 @@
     --topbar-color: #441151;
   }
 }
-
 
 
 .wip-alert {
@@ -281,6 +285,7 @@
 }
 
 .top-bar-button-text {
+  font-family: dejavu;
   align-self: center;
 }
 
@@ -354,20 +359,33 @@
 
 .footer-container {
   display: flex;
+  flex-direction: row-reverse;
   background-color: transparent;
   height: max-content;
   margin-top: 16px;
   width: 100%;
   font-size: 64px;
   text-align: right;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: stretch;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: center;
   border-top: solid 4px #000;
   position: relative;
   z-index: 10;
+  flex: 1 0 21%;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  padding:32px 0px 32px 0px;
 }
 
-.footer-discord-container {
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer-discord-container,
+.footer-resources-container {
   background-color: var(--background-color-end);
   padding: 16px;
   border-radius: 16px;
@@ -375,6 +393,16 @@
   border-left: solid 2px var(--discord-embed-shadow);
   border-right: solid 2px var(--discord-embed-shadow);
   box-shadow: 4px 4px 16px 4px var(--discord-embed-shadow);
+  margin: 16px 16px 16px 16px;
+}
+
+
+.footer-resources-container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+
+  padding: 0px 32px 0px 32px;
 }
 
 .discord-embed-title,
@@ -390,8 +418,9 @@
 }
 
 .logo-title {
-  justify-content: center;
-  font-size: 48px;
+  color:rgb(255, 99, 99);
+  font-size: 5vw;
+  font-family: dejavu;
 }
 
 .discord-server-elements {
@@ -399,7 +428,7 @@
 }
 
 .discord-server-name {
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -419,6 +448,33 @@
   justify-content: center;
 }
 
+.footer-resources-name {
+  font-size: 90%;
+  color: var(--background-color-start);
+}
+
+.resource-content-title {
+  font-size: 28px;
+  margin-left: 16px;
+  color: var(--background-color-start);
+}
+
+.resource-content-link {
+  font-size: 18px;
+  text-align: center;
+  align-self: center;
+  font-family: dejavu;
+  border-radius: 16px;
+  padding: 8px;
+  color: var(--content-text-color);
+  background-color: var(--content-bg-color);
+}
+
+.resource-content-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 60px;
+}
 
 @media (max-width: 1330px) and (min-width: 1105px ){
   .content-title {

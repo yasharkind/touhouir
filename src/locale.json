@@ -8,7 +8,17 @@
   "gametitle": "بازی های توهو",
   "musictitle": "موزیک های توهو",
   "footertext": "",
-  "discordembedtitle": ":سرور دیسکورد"
+  "discordembedtitle": ":سرور دیسکورد",
+  "resourcesname": "سایت های مرتبط:",
+  "resource1name" : "ویکی توهو: ",
+  "resource1link" : "https://en.touhouwiki.net",
+  "resource1linkname" : "Touhou Wiki",
+  "resource2name" : "دانلود آهنگ: ",
+  "resource2link" : "https://doujinstyle.com",
+  "resource2linkname" : "Doujin Style",
+  "resource3name" : "دانلود بازی: ",
+  "resource3link" : "https://moriyashrine.org/",
+  "resource3linkname" : "Moriya Shrine"
   
 }
 
