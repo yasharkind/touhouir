@@ -13,7 +13,7 @@ export default {
           light: "#ffb6c1",
           dark: "#cc6a88",
         },
-        touhou: "#e83e8c", // custom name
+        touhou: "#e83e8c",
       },
     },
   },
