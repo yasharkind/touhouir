@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router"
-import { createTheme, MegaMenu, MegaMenuDropdown } from "flowbite-react"
+import { createTheme, MegaMenu, MegaMenuDropdown, MegaMenuDropdownToggle } from "flowbite-react"
+import { useState } from "react";
 
 const customTheme = createTheme({
   "root": {
@@ -32,15 +33,15 @@ const customTheme = createTheme({
       "floating": {
         "animation": "transition-opacity",
         "arrow": {
-          "base": "absolute z-10 h-2 w-2 rotate-45",
+          "base": "absolute z-10 h-2 w-2 rotate-45 border-transparent",
           "style": {
             "dark": "bg-transparent dark:bg-transparent",
-            "light": "bg-white",
-            "auto": "bg-white dark:bg-transparent"
+            "light": "bg-transparent",
+            "auto": "bg-transparent dark:bg-transparent"
           },
           "placement": "-4px"
         },
-        "base": "z-10 bg-transparent w-fit divide-y divide-gray-100 rounded shadow focus:outline-none mt-2 block",
+        "base": "z-10 border-transparent bg-transparent w-fit divide-y divide-gray-100 rounded shadow focus:outline-none mt-2 block",
         "content": "bg-transparent py-1 text-sm text-gray-500 dark:text-gray-400",
         "divider": "my-1 h-px bg-transparent dark:bg-transparent",
         "header": "block px-4 py-2 text-sm text-transparent dark:text-gray-200",
@@ -51,13 +52,13 @@ const customTheme = createTheme({
           "icon": "mr-2 h-4 w-4"
         },
         "style": {
-          "dark": "bg-transparent text-white dark:bg-transparent",
+          "dark": "bg-transparent border-transparent text-white dark:bg-transparent",
           "light": "border border-transparent bg-white text-gray-900",
           "auto": "border border-transparent bg-white dark:border-none dark:bg-transparent text-gray-500 dark:text-gray-400"
         },
         "target": "w-fit"
       },
-      "inlineWrapper": "flex w-full items-center justify-between"
+      "inlineWrapper": "bg-transparent flex w-full items-center justify-between"
     }
   },
   "dropdownToggle": {
@@ -65,21 +66,32 @@ const customTheme = createTheme({
   }
 });
 
-const items = [{"name": "Games", "url": "/games"}, {"name": "palceholder", "url": "/music"}]
+const items = [{"name": "bullet hell", "url": "/games/bullethell", "items": [{
+  "name" : "All", "url": "/games/bullethell"},
+{"name" : "touhou 1", "url": "/games/bullethell/touhou1"},
+{"name" : "touhou 2", "url": "/games/bullethell/touhou2"}
+]},
+ {"name": "Fighting", "url": "/games/fighting"}]
 
 const TopBarButton = (props) => {
 
     const navigate = useNavigate();
     if (props.items)
       return (<div className="top-bar-button">
-                        <MegaMenuDropdown className="bg-transparent megamenu-button" toggle={<div style={{alignSelf:"center", justifySelf:"center"}}>{props.name}</div>}>
+                        <MegaMenuDropdown className="border-transparent shadow-none bg-transparent megamenu-button" toggle={<div className="bg-transparent" style={{alignSelf:"center", justifySelf:"center"}}>{props.name}</div>}>
                                     <div className="megamenu-container">
-                                      {props.items.map(item => (
-                                        <div key={item.name} className="megamenu-item"><a className="megamenu-link" href={item.url}>{item.name}</a></div>
-                                      ))}
+                                      {props.items.map(item => 
+                                        {if (item.items) {
+                                            const [istoggled, toggle] = useState(false)
+                                            return (<div><button className="flex flex-col border-solid border-2" onClick={_=>toggle(last=>!last)}>{item.name}⌄ </button>
+                                              {istoggled && (<div className="inner-item-container">{item.items.map(innerItem => {return (<a className="m-2" href={`a${innerItem.name}`} key={innerItem.url}>{innerItem.name}</a>)})}</div>)}
+                                            </div>)
+                                        } else {
+                                        return (<div key={item.name} className="megamenu-item"><a className="megamenu-link" href={item.url}>{item.name}</a></div>
+                                      )}}
+                                      )}
                                     </div>                                       
                         </MegaMenuDropdown>
-
                 </div>)
 
       return <div className="top-bar-button">{props.name}</div>
