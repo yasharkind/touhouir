@@ -129,6 +129,9 @@ const TopBar = () => {
           <TopBarButton icon="icon.png" alt="Home" url="/home" name="Home" />
           <TopBarButton icon="games.png" alt="Games" url="/games" name="Games" items={gameitems} />
           <TopBarButton icon="music.png" alt="Music" url="/music" name="Music" items={musicitems} />
+          <TopBarButton icon="music.png" alt="Music" url="/music" name="Music" items={musicitems} />
+          <TopBarButton icon="music.png" alt="Music" url="/music" name="Music" items={musicitems} />
+          <TopBarButton icon="music.png" alt="Music" url="/music" name="Music" items={musicitems} />
         </MegaMenu>
       </div>
       <div className="top-bar-left">
