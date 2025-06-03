@@ -16,6 +16,7 @@
   font-family: bkoodak;
 }
 
+
 .scheme-home {  
   --discord-embed-shadow: #290431;
   --background-color-start: #EE85B5;
@@ -38,6 +39,16 @@
   }
 }
 
+
+a {
+  font-family: dejavu;
+  color: var(--content-text-color);
+}
+
+button {
+  font-family: dejavu;
+  color: var(--content-text-color)
+}
 
 .wip-alert {
   display: flex;
@@ -188,6 +199,7 @@
 
 .category-title-right,
 .category-title {
+  font-family: bkoodak;
   color: #b9b2e0;
   display: flex;
   background-color: transparent;
@@ -272,8 +284,6 @@
   flex-direction: column;
 
   align-self: center;
-  margin-right: 16px;
-  margin-left: 16px;
 }
 
 .top-bar-button-img {
@@ -412,6 +422,7 @@ button:hover {
 .discord-embed-title,
 .discord-server-name,
 .footer-text {
+  font-family: bkoodak;
   color: var(--background-color-start);
   text-align: center;
 }
@@ -500,7 +511,7 @@ button:hover {
 }
 
 .megamenu-item {
-  color: var(--content-text-color);
+  color: var(--discord-embed-shadow);
   font-family: dejavu;
   margin: 16px 16px;
 }
@@ -629,6 +640,24 @@ button:hover {
   }
   .resource-content-container {
     margin-bottom: 8px;
+  }
+  .top-bar-button {
+    font-size: 10px;
+  }
+  .megamenu-container {
+    font-size: 16px;
+  }
+  .megamenu-item {
+    margin: 11px 16px;
+  }
+
+  .inner-item-container {
+    font-size: 10px;
+    padding: 8px;
+  }
+  
+  .inner-item {
+    margin: 4px;
   }
 }
 

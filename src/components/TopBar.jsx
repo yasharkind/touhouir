@@ -66,55 +66,78 @@ const customTheme = createTheme({
   }
 });
 
-const items = [{"name": "bullet hell", "url": "/games/bullethell", "items": [{
-  "name" : "All", "url": "/games/bullethell"},
-{"name" : "touhou 1", "url": "/games/bullethell/touhou1"},
-{"name" : "touhou 2", "url": "/games/bullethell/touhou2"}
-]},
- {"name": "Fighting", "url": "/games/fighting"}]
+const gameitems = [{ "name": "All", "url": "/Games" }, {
+  "name": "bullet hell", "url": "/games/bullethell", "items": [
+    { "name": "All", "url": "/games/bullethell" },
+    { "name": "touhou 6", "url": "/games/bullethell/6" },
+    { "name": "touhou 7", "url": "/games/bullethell/7" },
+    { "name": "touhou 8", "url": "/games/bullethell/8" },
+    { "name": "touhou 11", "url": "/games/bullethell/11" },
+    { "name": "touhou 15", "url": "/games/bullethell/15" },
+  ]
+},
+{
+  "name": "Fighting", "url": "/games/fighting", "items": [{
+    "name": "All", "url": "/games/fighting",
+    "name": "hisotensoku", "url": "/games/fighting/123",
+  }]
+},{
+  "name": "other", "url": "/games/other", "items": [
+    { "name": "All", "url": "/games/other" },
+    { "name": "touhou 17.5", "url": "/games/other/175" },
+  ]
+},]
+
+const musicitems = [{ "name": "official music", "url": "/music/official" },
+{
+  "name": "fan music", "url": "/music/fanmade"
+}]
 
 const TopBarButton = (props) => {
 
-    const navigate = useNavigate();
-    if (props.items)
-      return (<div className="top-bar-button">
-                        <MegaMenuDropdown className="border-transparent shadow-none bg-transparent megamenu-button" toggle={<div className="bg-transparent" style={{alignSelf:"center", justifySelf:"center"}}>{props.name}</div>}>
-                                    <div className="megamenu-container">
-                                      {props.items.map(item => 
-                                        {if (item.items) {
-                                            const [istoggled, toggle] = useState(false)
-                                            return (<div><button className="flex flex-col border-solid border-2" onClick={_=>toggle(last=>!last)}>{item.name}⌄ </button>
-                                              {istoggled && (<div className="inner-item-container">{item.items.map(innerItem => {return (<a className="m-2" href={`a${innerItem.name}`} key={innerItem.url}>{innerItem.name}</a>)})}</div>)}
-                                            </div>)
-                                        } else {
-                                        return (<div key={item.name} className="megamenu-item"><a className="megamenu-link" href={item.url}>{item.name}</a></div>
-                                      )}}
-                                      )}
-                                    </div>                                       
-                        </MegaMenuDropdown>
-                </div>)
+  const navigate = useNavigate();
+  if (props.items)
+    return (<div className="top-bar-button">
+      <MegaMenuDropdown className="border-transparent shadow-none bg-transparent megamenu-button" toggle={<div className="bg-transparent" style={{ alignSelf: "center", justifySelf: "center" }}>{props.name}</div>}>
+        <div className="megamenu-container">
+          {props.items.map(item => {
+            if (item.items) {
+              const [istoggled, toggle] = useState(false)
+              return (<div><button className="flex flex-col border-solid border-2" onClick={_ => toggle(last => !last)}>{item.name}⌄ </button>
+                {istoggled && (<div className="inner-item-container">{item.items.map(innerItem => { return (<a className="inner-item" href={innerItem.url} key={innerItem.url}>{innerItem.name}</a>) })}</div>)}
+              </div>)
+            } else {
+              return (<div key={item.name} className="megamenu-item"><a className="megamenu-link" href={item.url}>{item.name}</a></div>
+              )
+            }
+          }
+          )}
+        </div>
+      </MegaMenuDropdown>
+    </div>)
 
-      return <div className="top-bar-button">{props.name}</div>
+  return <a href={props.url}><button className="top-bar-button">{props.name}</button></a>
 }
 
 const TopBar = () => {
 
-    const navigate = useNavigate();
-    return <>
-      <div className="top-bar-container">
-            <div className="top-bar-right">
+  const navigate = useNavigate();
+  return <>
+    <div className="top-bar-container">
+      <div className="top-bar-right">
 
-                <MegaMenu theme={customTheme}>
-                <TopBarButton icon="icon.png" alt="Home" url="/home" name="Home"/>
-                <TopBarButton icon="games.png" alt="Games" url="/games" name="Games" items={items}/>
-                </MegaMenu>
-            </div>
-            <div className="top-bar-left">
-                <div className="logo-title" onClick={() => {navigate("/home")}}>touhou.ir</div>
-            </div>
-        </div>
-        
-    </>
+        <MegaMenu theme={customTheme}>
+          <TopBarButton icon="icon.png" alt="Home" url="/home" name="Home" />
+          <TopBarButton icon="games.png" alt="Games" url="/games" name="Games" items={gameitems} />
+          <TopBarButton icon="music.png" alt="Music" url="/music" name="Music" items={musicitems} />
+        </MegaMenu>
+      </div>
+      <div className="top-bar-left">
+        <div className="logo-title" onClick={() => { navigate("/home") }}>touhou.ir</div>
+      </div>
+    </div>
+
+  </>
 }
 
 export default TopBar

@@ -12,7 +12,9 @@ createRoot(document.getElementById('root')).render(
         <Routes>
             <Route path=""  element={<RedirectRoot />} />
             <Route path='home' element={<HomePage />} />
-            <Route path='games' element={<WIP />} />
+            <Route path='games' element={<WIP />} >
+                <Route path="*" element={<WIP />} />
+            </Route>
             <Route path='music' element={<WIP />} />
             <Route path='fangames' element={<WIP />} />
             <Route path='manga' element={<WIP />} />
