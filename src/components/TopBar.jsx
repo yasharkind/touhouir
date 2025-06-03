@@ -77,10 +77,9 @@ const gameitems = [{ "name": "All", "url": "/Games" }, {
   ]
 },
 {
-  "name": "Fighting", "url": "/games/fighting", "items": [{
-    "name": "All", "url": "/games/fighting",
-    "name": "hisotensoku", "url": "/games/fighting/123",
-  }]
+  "name": "Fighting", "url": "/games/fighting", "items": [
+    {"name": "All", "url": "/games/fighting"},
+    {"name": "hisotensoku", "url": "/games/fighting/123"}]
 },{
   "name": "other", "url": "/games/other", "items": [
     { "name": "All", "url": "/games/other" },
