@@ -51,6 +51,10 @@ button {
   color: var(--content-text-color)
 }
 
+.dejavu {
+  font-family: dejavu;
+}
+
 .wip-alert {
   display: flex;
   position: fixed;
@@ -646,7 +650,7 @@ button:hover {
     font-size: 10px;
   }
   .megamenu-container {
-    font-size: 16px;
+    font-size: 12px;
   }
   .megamenu-item {
     margin: 11px 16px;
@@ -659,6 +663,7 @@ button:hover {
   
   .inner-item {
     margin: 4px;
+    font-size: 10px;
   }
 }
 
