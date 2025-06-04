@@ -535,6 +535,10 @@ button:hover {
   width: 100%;
 }
 
+.discord-iframe {
+  border-radius: 8px;
+}
+
 @media (max-width: 1330px) and (min-width: 1105px ){
   .content-title {
     font-size: 24px;
@@ -606,7 +610,8 @@ button:hover {
 
   .align-items-right {
     font-family: 'bkoodak';
-    width: 85%;
+    width: calc(100% - 32px);
+    margin: 0px 16px;
   }
 
   .slider-container {
