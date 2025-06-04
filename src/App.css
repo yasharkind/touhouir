@@ -611,7 +611,7 @@ button:hover {
   .align-items-right {
     font-family: 'bkoodak';
     width: calc(100% - 32px);
-    margin: 0px 16px;
+    margin: 8px 16px;
   }
 
   .slider-container {
@@ -647,10 +647,23 @@ button:hover {
   .footer-resources-name,
   .discord-embed-title {
     font-size: 44px;
+    text-align: center;
   }
+
+  .footer-resources-name {
+    font-size: 32px;
+    margin: 8px 0px;
+    text-align: center;
+  }
+
   .resource-content-container {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
+
+  .resource-content-title {
+    font-size: 22px;
+  }
+
   .top-bar-button {
     font-size: 10px;
   }
