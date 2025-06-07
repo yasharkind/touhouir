@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router"
 import { createTheme, MegaMenu, MegaMenuDropdown, MegaMenuDropdownToggle } from "flowbite-react"
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const customTheme = createTheme({
   "root": {
@@ -78,9 +79,9 @@ const gameitems = [{ "name": "All", "url": "/Games" }, {
 },
 {
   "name": "Fighting", "url": "/games/fighting", "items": [
-    {"name": "All", "url": "/games/fighting"},
-    {"name": "hisotensoku", "url": "/games/fighting/123"}]
-},{
+    { "name": "All", "url": "/games/fighting" },
+    { "name": "hisotensoku", "url": "/games/fighting/123" }]
+}, {
   "name": "other", "url": "/games/other", "items": [
     { "name": "All", "url": "/games/other" },
     { "name": "touhou 17.5", "url": "/games/other/175" },
@@ -92,7 +93,22 @@ const musicitems = [{ "name": "official music", "url": "/music/official" },
   "name": "fan music", "url": "/music/fanmade"
 }]
 
-const charitems = [{ "name": "Reimu", "url": "/characters/reimu" }, { "name": "Marisa", "url": "/characters/marisa" }]
+const charitems = [{
+  "name": "Main", "url": "/characters", "items": [
+    { "name": "Reimu", "url": "/characters/reimu" },
+    { "name": "Marisa", "url": "/characters/marisa" }
+  ]
+}, {
+  "name": "th6", "url": "/characters", "items": [
+    { "name": "Cirno", "url": "/characters/cirno" },
+    { "name": "Remilia", "url": "/characters/remilia" },
+    { "name": "Flandre", "url": "/characters/flandre" },
+    { "name": "Sakuya", "url": "/characters/sakuya" },
+    { "name": "Patchouli", "url": "/characters/patchouli" },
+    { "name": "Meiling", "url": "/characters/meiling" },
+
+  ]
+}]
 
 const TopBarButton = (props) => {
 
@@ -100,12 +116,24 @@ const TopBarButton = (props) => {
   if (props.items)
     return (<div className="top-bar-button">
       <MegaMenuDropdown className="border-transparent shadow-none bg-transparent megamenu-button" toggle={<div className="bg-transparent" style={{ alignSelf: "center", justifySelf: "center" }}>{props.name}</div>}>
-        <div className="megamenu-container">
+        <motion.div className="megamenu-container"
+          initial={{ height: 'auto', opacity: 0 }}
+          animate={{ height: "auto", opacity: 1 }}
+          exit={{ height: 0, opacity: 0 }}
+          transition={{ duration: 0.3 }}>
           {props.items.map(item => {
             if (item.items) {
               const [istoggled, toggle] = useState(false)
-              return (<div className="dejavu"  onMouseLeave={_ => toggle(last => false)} onMouseEnter={_ => toggle(last => true)}><button className="flex flex-col border-solid border-2 m-auto" onMouseDown={_ => toggle(last => !last)}>{item.name}⌄ </button>
-                {istoggled && (<div className="inner-item-container">{item.items.map(innerItem => { return (<a className="inner-item" href={innerItem.url} key={innerItem.url}>{innerItem.name}</a>) })}</div>)}
+              return (<div className="dejavu" onMouseLeave={_ => toggle(last => false)} onMouseEnter={_ => toggle(last => true)}><button className="flex flex-col border-solid border-2 m-auto" onMouseDown={_ => toggle(last => !last)}>{item.name}⌄ </button>
+                {istoggled && (
+                  <motion.div
+                    className="inner-item-container"
+                    initial={{ height: 'auto', opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {item.items.map(innerItem => { return (<a className="inner-item" href={innerItem.url} key={innerItem.url}>{innerItem.name}</a>) })}</motion.div>)}
               </div>)
             } else {
               return (<div key={item.name} className="megamenu-item"><a className="megamenu-link" href={item.url}>{item.name}</a></div>
@@ -113,7 +141,7 @@ const TopBarButton = (props) => {
             }
           }
           )}
-        </div>
+        </motion.div>
       </MegaMenuDropdown>
     </div>)
 

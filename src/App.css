@@ -556,7 +556,11 @@ button:hover {
   border-radius: 8px;
   padding: 18px;
   width: 100%;
+
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
+
 
 .discord-iframe {
   border-radius: 8px;
