@@ -8,8 +8,8 @@ const Marisa = () => {
         <TopBar />
         <div className="bg" >
             <div className="flex flex-row" >
-                <img className="m-auto" src="/characters/marisa/marisa2.png" />
-                <img className="m-auto" src="/characters/marisa/marisa1.png" />
+                <img className="m-auto" src="/chars/marisa/marisa2.png" />
+                <img className="m-auto" src="/chars/marisa/marisa1.png" />
             </div>
             <div className="text-9xl text-center dejavu">
                 {locale.marisatext}
