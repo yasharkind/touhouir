@@ -48,7 +48,7 @@ a {
 
 button {
   font-family: dejavu;
-  color: var(--content-text-color)
+  color: var(--discord-embed-shadow);
 }
 
 .dejavu {
@@ -526,11 +526,12 @@ button:hover {
 }
 
 .inner-item-container {
+  color: var(--discord-embed-shadow);
   display: flex;
   flex-direction: column;
-  border-top: solid 4px var(--background-color-end);
-  border-bottom: solid 4px var(--background-color-end);
-  border-radius: 16px;
+  border-right: solid 4px var(--background-color-end);
+  border-left: solid 4px var(--background-color-end);
+  border-radius: 8px;
   padding: 18px;
   width: 100%;
 }
