@@ -92,6 +92,8 @@ const musicitems = [{ "name": "official music", "url": "/music/official" },
   "name": "fan music", "url": "/music/fanmade"
 }]
 
+const charitems = [{ "name": "Reimu", "url": "/characters/reimu" }, { "name": "Marisa", "url": "/characters/marisa" }]
+
 const TopBarButton = (props) => {
 
   const navigate = useNavigate();
@@ -129,6 +131,7 @@ const TopBar = () => {
           <TopBarButton icon="icon.png" alt="Home" url="/home" name="Home" />
           <TopBarButton icon="games.png" alt="Games" url="/games" name="Games" items={gameitems} />
           <TopBarButton icon="music.png" alt="Music" url="/music" name="Music" items={musicitems} />
+          <TopBarButton icon="characters.png" alt="Characters" url="/characters" name="Characters" items={charitems} />
         </MegaMenu>
       </div>
       <div className="top-bar-left">

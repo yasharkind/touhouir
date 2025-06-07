@@ -6,6 +6,8 @@ import { BrowserRouter, HashRouter, Route, Routes } from 'react-router'
 import RedirectRoot from './pages/RedirectRoot.jsx'
 import WIP from './pages/WIP.jsx'
 import "flowbite/dist/flowbite.css";
+import Reimu from './pages/Characters/Reimu.jsx'
+import Marisa from './pages/Characters/Marisa.jsx'
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
@@ -19,7 +21,10 @@ createRoot(document.getElementById('root')).render(
             <Route path='fangames' element={<WIP />} />
             <Route path='manga' element={<WIP />} />
             <Route path='anime' element={<WIP />} />
-            <Route path='characters' element={<WIP />} />
+            <Route path='characters' >
+                <Route path='reimu' element={<Reimu />} />
+                <Route path='marisa' element={<Marisa />} />
+            </Route>
         </Routes>
     </BrowserRouter>
 )

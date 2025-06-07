@@ -15,6 +15,7 @@
   height: fit-content;
   font-family: bkoodak;
   overflow-x: hidden;
+  width: 100%;
 }
 
 
@@ -28,6 +29,16 @@
   --logo-color: #441151;
 }
 
+.scheme-marisa {
+  --discord-embed-shadow: #422040;
+  --background-color-start: #E57A44;
+  --background-color-end: #D6DBB2;
+  --content-bg-color: #BCD8C1;
+  --topbar-color: #E3D985;
+  --topbar-border-color: #E3D985;
+  --logo-color: #422040;
+}
+
 @media (prefers-color-scheme: dark) {
   .scheme-home {
     --discord-embed-shadow: #d5b2e0;
@@ -38,6 +49,17 @@
     --topbar-border-color: #441151;
     --topbar-color: #441151;
   }
+
+  .scheme-marisa {
+  --discord-embed-shadow: #422040;
+  --background-color-start: #D6DBB2;
+  --background-color-end: #E57A44;
+  --content-bg-color: #BCD8C1;
+  --topbar-color: #E3D985;
+  --topbar-border-color: #E3D985;
+  --logo-color: #422040;
+}
+
 }
 
 
