@@ -43,13 +43,13 @@ const HomePage = () => {
 					</div>
 				</div>
 				<div className="category-blocks-container">
-					<CategoryBlock title="بازی های توهو" img="games.jpg" url="games" />
-					<CategoryBlock title="موزیک های توهو" img="music.jpg" url="music" />
-					<CategoryBlock title="فن گیم های توهو" img="fangames.png" url="fangames" />
-					<CategoryBlock title="مانگا های توهو" img="manga.jpg" url="manga" />
-					<CategoryBlock title="انیمه های توهو" img="anime.jpg" url="anime" />
-					<CategoryBlock title="کاراکتر های توهو" img="characters.jpg" url="characters" />
-					<CategoryBlock title="سرور دیسکورد" img="discord.jpeg" url={locale.serverlink} blank={true} />
+					<CategoryBlock title="بازی های توهو" img="/homepage/games.jpg" url="games" />
+					<CategoryBlock title="موزیک های توهو" img="/homepage/music.jpg" url="music" />
+					<CategoryBlock title="فن گیم های توهو" img="/homepage/fangames.png" url="fangames" />
+					<CategoryBlock title="مانگا های توهو" img="/homepage/manga.jpg" url="manga" />
+					<CategoryBlock title="انیمه های توهو" img="/homepage/anime.jpg" url="anime" />
+					<CategoryBlock title="کاراکتر های توهو" img="/homepage/characters.jpg" url="characters" />
+					<CategoryBlock title="سرور دیسکورد" img="/homepage/discord.jpeg" url={locale.serverlink} blank={true} />
 				</div>
 				<Footer />
 			</div>

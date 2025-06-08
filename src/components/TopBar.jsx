@@ -93,7 +93,11 @@ const musicitems = [{ "name": "official music", "url": "/music/official" },
   "name": "fan music", "url": "/music/fanmade"
 }]
 
-const charitems = [{
+const charitems = [
+  {
+    "name": "All", "url": "/characters"
+  },
+  {
   "name": "Main", "url": "/characters", "items": [
     { "name": "Reimu", "url": "/characters/reimu" },
     { "name": "Marisa", "url": "/characters/marisa" }
@@ -130,10 +134,12 @@ const TopBarButton = (props) => {
                     className="inner-item-container"
                     initial={{ height: 'auto', opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
+                    exit={{ height: 'auto', opacity: 0 }}
                     transition={{ duration: 0.3 }}
+                    key={item}
                   >
-                    {item.items.map(innerItem => { return (<a className="inner-item" href={innerItem.url} key={innerItem.url}>{innerItem.name}</a>) })}</motion.div>)}
+                    {item.items.map(innerItem => { return (<a className="inner-item" href={innerItem.url} key={innerItem.url}>{innerItem.name}</a>) })}
+                  </motion.div>)}
               </div>)
             } else {
               return (<div key={item.name} className="megamenu-item"><a className="megamenu-link" href={item.url}>{item.name}</a></div>

@@ -39,6 +39,16 @@
   --logo-color: #422040;
 }
 
+.scheme-characters {
+  --discord-embed-shadow: #8C2155;
+  --topbar-color: #AED4E6;
+  --background-color-start: #AED4E6;
+  --background-color-end: #741E38;
+  --content-bg-color: #AF7595;
+  --topbar-border-color: #AFA5BE;
+  --logo-color: #5C1A1B;
+}
+
 @media (prefers-color-scheme: dark) {
   .scheme-home {
     --discord-embed-shadow: #d5b2e0;
@@ -48,6 +58,7 @@
     --background-color-end: #EE85B5;
     --topbar-border-color: #441151;
     --topbar-color: #441151;
+    --logo-color: #d5b2e0;
   }
 
   .scheme-marisa {
@@ -58,6 +69,15 @@
   --topbar-color: #E3D985;
   --topbar-border-color: #E3D985;
   --logo-color: #422040;
+}
+.scheme-characters {
+  --discord-embed-shadow: #AED4E6;
+  --topbar-color: #741E38;
+  --background-color-start: #741E38;
+  --background-color-end: #AED4E6;
+  --content-bg-color: #AF7595;
+  --topbar-border-color: #5C1A1B;
+  --logo-color: #AED4E6;
 }
 
 }
@@ -367,7 +387,7 @@ button:hover {
   border-radius: 32px;
   height: max-content;
   margin: 32px;
-  box-shadow: 8px 8px 32px rgb(37, 37, 37);
+  box-shadow: 2px 2px 8px rgb(37, 37, 37);
 }
 
 .category-content-left,
@@ -460,7 +480,6 @@ button:hover {
 }
 
 .logo-title {
-  color:rgb(255, 99, 99);
   font-size: 5vw;
   font-family: dejavu;
 }
@@ -599,7 +618,7 @@ button:hover {
   .category-container {
     flex-direction: column-reverse;
     min-height: max-content;
-    background: linear-gradient(0deg, #38283b, transparent);
+    background: transparent;
     justify-items: center;
     align-content: center;
     align-self: center;
@@ -607,7 +626,7 @@ button:hover {
     border-radius: 32px;
     height: max-content;
     width: 250px;
-    box-shadow: 8px 8px 32px rgb(37, 37, 37);
+    box-shadow: 2px 2px 8px rgb(37, 37, 37);
   }
 
   .category-content-left,

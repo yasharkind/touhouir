@@ -6,7 +6,7 @@ const CategoryBlock = (props) => {
                     {props.title}
                 </div>
             </div>
-            <img src={`/homepage/${props.img}`} className={`category-img`} />
+            <img src={`${props.img}`} className={`category-img`} />
         </a>
     </>
 }
