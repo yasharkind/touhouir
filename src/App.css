@@ -93,10 +93,6 @@ button {
   color: var(--discord-embed-shadow);
 }
 
-.dejavu {
-  font-family: dejavu;
-}
-
 .wip-alert {
   display: flex;
   position: fixed;
@@ -735,4 +731,9 @@ button:hover {
 
 .m32 {
   margin: 32px;
+}
+
+
+.dejavu {
+  font-family: dejavu;
 }

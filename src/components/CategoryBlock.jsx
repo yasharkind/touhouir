@@ -6,7 +6,7 @@ const CategoryBlock = (props) => {
         <AnimateEnter >
             <a className={`category-container`} href={props.url} target={props.blank ? "_blank" : "_self"}>
                 <div className={`category-content`}>
-                    <div className={`category-title`} dir="rtl">
+                    <div className={`category-title  ${props.class}`} dir="rtl">
                         {props.title}
                     </div>
                 </div>
