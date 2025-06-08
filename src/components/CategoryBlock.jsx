@@ -1,13 +1,18 @@
+import AnimateEnter from "./AnimateEnter"
+
 const CategoryBlock = (props) => {
+
     return <>
-        <a className={`category-container`} href={props.url} target={props.blank ? "_blank" : "_self"}>
-            <div className={`category-content`}>
-                <div className={`category-title`} dir="rtl">
-                    {props.title}
+        <AnimateEnter >
+            <a className={`category-container`} href={props.url} target={props.blank ? "_blank" : "_self"}>
+                <div className={`category-content`}>
+                    <div className={`category-title`} dir="rtl">
+                        {props.title}
+                    </div>
                 </div>
-            </div>
-            <img src={`${props.img}`} className={`category-img`} />
-        </a>
+                <img src={`${props.img}`} className={`category-img`} />
+            </a>
+        </AnimateEnter>
     </>
 }
 export default CategoryBlock

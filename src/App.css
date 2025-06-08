@@ -448,6 +448,7 @@ button:hover {
 .footer-discord-container,
 .footer-resources-container {
   background-color: var(--background-color-end);
+  height: 95%;
   padding: 16px;
   border-radius: 16px;
   border-top: solid 2px var(--discord-embed-shadow);
