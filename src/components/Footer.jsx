@@ -46,6 +46,7 @@ const Footer = () => {
                     </div>
                 </AnimateEnter>
             </div>
+            <div className="m-4 text-2xl copyright dejavu">Touhou Project is a series created by ZUN of Team Shanghai Alice. All rights to original content belong to their respective owners.</div>
         </>
     )
 }

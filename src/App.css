@@ -82,6 +82,10 @@
 
 }
 
+.copyright {
+  color: var(--background-color-start);
+}
+
 
 a {
   font-family: dejavu;
@@ -189,6 +193,9 @@ button {
 .content-title {
   font-family: 'bkoodak';
   color: var(--content-text-color);
+}
+.intro-title {
+  font-size: xx-large;
 }
 
 .intro-text {

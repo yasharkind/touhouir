@@ -1,0 +1,179 @@
+{
+    "gameitems": [
+        {
+            "name": "All",
+            "url": "/Games"
+        },
+        {
+            "name": "bullet hell",
+            "url": "/games/bullethell",
+            "items": [
+                {
+                    "name": "All",
+                    "url": "/games/bullethell"
+                },
+                {
+                    "name": "touhou 6",
+                    "url": "/games/bullethell/6"
+                },
+                {
+                    "name": "touhou 7",
+                    "url": "/games/bullethell/7"
+                },
+                {
+                    "name": "touhou 8",
+                    "url": "/games/bullethell/8"
+                },
+                {
+                    "name": "touhou 11",
+                    "url": "/games/bullethell/11"
+                },
+                {
+                    "name": "touhou 15",
+                    "url": "/games/bullethell/15"
+                }
+            ]
+        },
+        {
+            "name": "Fighting",
+            "url": "/games/fighting",
+            "items": [
+                {
+                    "name": "All",
+                    "url": "/games/fighting"
+                },
+                {
+                    "name": "hisotensoku",
+                    "url": "/games/fighting/123"
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "url": "/games/other",
+            "items": [
+                {
+                    "name": "All",
+                    "url": "/games/other"
+                },
+                {
+                    "name": "touhou 17.5",
+                    "url": "/games/other/175"
+                }
+            ]
+        }
+    ],
+    "musicitems": [
+        {
+            "name": "official music",
+            "url": "/music/official"
+        },
+        {
+            "name": "fan music",
+            "url": "/music/fanmade"
+        }
+    ],
+    "charitems": [
+        {
+            "name": "All",
+            "url": "/characters"
+        },
+        {
+            "name": "Main",
+            "url": "/characters",
+            "items": [
+                {
+                    "name": "Reimu",
+                    "prt": "/chars/reimu/portrait.png",
+                    "url": "/characters/reimu"
+                },
+                {
+                    "name": "Marisa",
+                    "prt": "/chars/marisa/portrait.png",
+                    "url": "/characters/marisa"
+                }
+            ]
+        },
+        {
+            "name": "th6",
+            "altname": "Touhou 6",
+            "url": "/characters",
+            "items": [
+                {
+                    "name": "Cirno",
+                    "prt": "/chars/cirno/portrait.png",
+                    "url": "/characters/cirno"
+                },
+                {
+                    "name": "Remilia",
+                    "prt": "/chars/remilia/portrait.png",
+                    "url": "/characters/remilia"
+                },
+                {
+                    "name": "Flandre",
+                    "prt": "/chars/flandre/portrait.png",
+                    "url": "/characters/flandre"
+                },
+                {
+                    "name": "Sakuya",
+                    "prt": "/chars/sakuya/portrait.png",
+                    "url": "/characters/sakuya"
+                },
+                {
+                    "name": "Patchouli",
+                    "prt": "/chars/patchouli/portrait.png",
+                    "url": "/characters/patchouli"
+                },
+                {
+                    "name": "Meiling",
+                    "prt": "/chars/meiling/portrait.png",
+                    "url": "/characters/meiling"
+                }
+            ]
+        },
+        {
+            "name": "th7",
+            "altname": "Touhou 7",
+            "url": "/characters",
+            "items": [
+                {
+                    "name": "Chen",
+                    "prt": "/chars/chen/portrait.webp",
+                    "url": "/characters/chen"
+                },
+                {
+                    "name": "Alice",
+                    "prt": "/chars/alice/portrait.png",
+                    "url": "/characters/alice"
+                },
+                {
+                    "name": "Youmu",
+                    "prt": "/chars/youmu/portrait.png",
+                    "url": "/characters/youmu"
+                },
+                {
+                    "name": "Yuyuko",
+                    "prt": "/chars/yuyuko/portrait.png",
+                    "url": "/characters/yuyuko"
+                },
+                {
+                    "name": "Yukari",
+                    "prt": "/chars/yukari/portrait.png",
+                    "url": "/characters/yukari"
+                }
+            ]
+        },
+        {
+            "name": "th8",
+            "altname": "Touhou 8",
+            "url": "/characters",
+            "items": [
+                {
+                    "name": "Reisen",
+                    "prt": "/chars/reisen/portrait.png",
+                    "url": "/characters/reisen"
+                }
+            ]
+        }
+    ]
+}

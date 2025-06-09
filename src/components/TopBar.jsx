@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router"
-import { createTheme, MegaMenu, MegaMenuDropdown, MegaMenuDropdownToggle } from "flowbite-react"
+import { createTheme, MegaMenu, MegaMenuDropdown } from "flowbite-react"
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import items from "../items.json"
 
 const customTheme = createTheme({
   "root": {
@@ -67,52 +68,6 @@ const customTheme = createTheme({
   }
 });
 
-const gameitems = [{ "name": "All", "url": "/Games" }, {
-  "name": "bullet hell", "url": "/games/bullethell", "items": [
-    { "name": "All", "url": "/games/bullethell" },
-    { "name": "touhou 6", "url": "/games/bullethell/6" },
-    { "name": "touhou 7", "url": "/games/bullethell/7" },
-    { "name": "touhou 8", "url": "/games/bullethell/8" },
-    { "name": "touhou 11", "url": "/games/bullethell/11" },
-    { "name": "touhou 15", "url": "/games/bullethell/15" },
-  ]
-},
-{
-  "name": "Fighting", "url": "/games/fighting", "items": [
-    { "name": "All", "url": "/games/fighting" },
-    { "name": "hisotensoku", "url": "/games/fighting/123" }]
-}, {
-  "name": "other", "url": "/games/other", "items": [
-    { "name": "All", "url": "/games/other" },
-    { "name": "touhou 17.5", "url": "/games/other/175" },
-  ]
-},]
-
-const musicitems = [{ "name": "official music", "url": "/music/official" },
-{
-  "name": "fan music", "url": "/music/fanmade"
-}]
-
-const charitems = [
-  {
-    "name": "All", "url": "/characters"
-  },
-  {
-  "name": "Main", "url": "/characters", "items": [
-    { "name": "Reimu", "url": "/characters/reimu" },
-    { "name": "Marisa", "url": "/characters/marisa" }
-  ]
-}, {
-  "name": "th6", "url": "/characters", "items": [
-    { "name": "Cirno", "url": "/characters/cirno" },
-    { "name": "Remilia", "url": "/characters/remilia" },
-    { "name": "Flandre", "url": "/characters/flandre" },
-    { "name": "Sakuya", "url": "/characters/sakuya" },
-    { "name": "Patchouli", "url": "/characters/patchouli" },
-    { "name": "Meiling", "url": "/characters/meiling" },
-
-  ]
-}]
 
 const TopBarButton = (props) => {
 
@@ -163,9 +118,9 @@ const TopBar = () => {
 
         <MegaMenu theme={customTheme}>
           <TopBarButton icon="icon.png" alt="Home" url="/home" name="Home" />
-          <TopBarButton icon="games.png" alt="Games" url="/games" name="Games" items={gameitems} />
-          <TopBarButton icon="music.png" alt="Music" url="/music" name="Music" items={musicitems} />
-          <TopBarButton icon="characters.png" alt="Characters" url="/characters" name="Characters" items={charitems} />
+          <TopBarButton icon="games.png" alt="Games" url="/games" name="Games" items={items.gameitems} />
+          <TopBarButton icon="music.png" alt="Music" url="/music" name="Music" items={items.musicitems} />
+          <TopBarButton icon="characters.png" alt="Characters" url="/characters" name="Characters" items={items.charitems} />
         </MegaMenu>
       </div>
       <div className="top-bar-left">
