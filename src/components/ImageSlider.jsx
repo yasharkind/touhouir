@@ -1,22 +1,20 @@
 import { useEffect, useState } from "react";
 
-let images = ["top1.jpg", "top2.jpg", "top3.jpg", "top4.jpg"]
 
 
-
-function ImageSlider() {
+function ImageSlider(props) {
   const [image, setImage] = useState(0);
   useEffect(() => {
 	const interval = setInterval(() => {
-	  setImage(prev => (prev + 1) % images.length)
+	  setImage(prev => (prev + 1) % props.images.length)
 	}, 3000);
 	return () => clearInterval(interval);
   }, [])
   return (
     <>
-	  <div className="slider-container">
-	  {images.map(img => (
-		<img src={`/slider/${img}`} key={img} className='img-slider-img' style={{translate: `${image * -100}%`}}/>
+	  <div className={`slider-container ${props.className}`}>
+	  {props.images.map(img => (
+		<img src={`${img}`} key={img} className='img-slider-img' style={{translate: `${image * -100}%`}}/>
 	  ))}
 	  </div>
     </>

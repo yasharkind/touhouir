@@ -1,7 +1,4 @@
-import { useEffect, useState } from 'react'
 import '../App.css'
-import ImageSlider from '../components/ImageSlider'
-import locale from '../locale.json'
 import CategoryBlock from '../components/CategoryBlock'
 import TopBar from '../components/TopBar'
 import Footer from '../components/Footer'

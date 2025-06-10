@@ -6,6 +6,7 @@ import CategoryBlock from '../components/CategoryBlock'
 import TopBar from '../components/TopBar'
 import Footer from '../components/Footer'
 
+let images = ["/slider/top1.jpg", "/slider/top2.jpg", "/slider/top3.jpg", "/slider/top4.jpg"]
 
 const HomePage = () => {
 	const [wipDisplay, toggleWipDisplay] = useState("")
@@ -14,11 +15,11 @@ const HomePage = () => {
 
 			<div className={`wip-alert ${wipDisplay}`} onClick={() => { toggleWipDisplay(() => "invisible") }} dir='rtl'>
 				<div style={{ alignSelf: "center" }}>
-					سایت هنوز در حال ساخه شدن است. برای ثبت پیشنهادات وارد سرور دیسکور شوید
+					سایت هنوز در حال ساخته شدن است. برای ثبت پیشنهادات وارد سرور دیسکور شوید
 				</div>
 			</div>
 			<TopBar />
-			<ImageSlider />
+			<ImageSlider images={images} />
 			<div className="fade" />
 			<div className="bg">
 				<div className="content" >

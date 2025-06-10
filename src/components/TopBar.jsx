@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router"
 import { createTheme, MegaMenu, MegaMenuDropdown } from "flowbite-react"
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import items from "../items.json"
 
 const customTheme = createTheme({
