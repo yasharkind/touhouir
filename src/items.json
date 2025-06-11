@@ -138,7 +138,7 @@
             "items": [
                 {
                     "name": "Chen",
-                    "prt": "/chars/chen/portrait.webp",
+                    "prt": "/chars/chen/portrait.png",
                     "url": "/characters/chen"
                 },
                 {
@@ -168,6 +168,11 @@
             "altname": "Touhou 8",
             "url": "/characters",
             "items": [
+                {
+                    "name": "Tewi",
+                    "prt": "/chars/tewi/portrait.png",
+                    "url": "/characters/tewi"
+                },
                 {
                     "name": "Reisen",
                     "prt": "/chars/reisen/portrait.png",

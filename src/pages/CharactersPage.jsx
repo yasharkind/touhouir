@@ -14,7 +14,7 @@ const CharactersPage = () => {
                 
                 {items.charitems.map(category => {
                     {if (!category.items) return}
-                    return <><div className="text-3xl dejavu">
+                    return <><div className="text-3xl dejavu color-7">
                         {category.altname || category.name}
 
                         </div>
@@ -22,8 +22,12 @@ const CharactersPage = () => {
                         {category.items?.map((character) => {
                             return <CategoryBlock key={character.name} class="dejavu" title={character.name} img={character.prt} url={character.url} />
                         })}
+                        
                         </div></>
                 })}
+                <a href="https://www.pixiv.net/en/users/4920496" target="_blank" className="lg:text-3xl md:text-4xl sm:text-xl color-2">
+                        منبع همه ی آرت های این صفحه
+                        </a>
                 <Footer />
             </div>
         </div>

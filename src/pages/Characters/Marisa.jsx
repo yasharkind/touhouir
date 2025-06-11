@@ -34,7 +34,7 @@ const Marisa = () => {
                         Love Colored Master Spark!:
                     </div>
                     <audio controls className="w-full">
-                        <source src="/chars/marisa/theme.mp3" type="audio/mpeg" />
+                        <source src="/chars/marisa/theme.ogg" type="audio/ogg" />
                     </audio>
                 </div>
                 <div dir="ltr" className="rounded-xl">

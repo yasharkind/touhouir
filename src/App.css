@@ -82,6 +82,62 @@
 
 }
 
+.bg-1 {
+  background-color: var(--discord-embed-shadow);
+}
+
+.color-1 {
+  color: var(--discord-embed-shadow);
+}
+
+.bg-2 {
+  background-color: var(--topbar-color);
+}
+
+.color-2 {
+  color: var(--topbar-color);
+}
+
+.bg-3 {
+  background-color: var(--background-color-start);
+}
+
+.color-3 {
+  color: var(--background-color-start);
+}
+
+.bg-4 {
+  background-color: var(--background-color-end);
+}
+
+.color-4 {
+  color: var(--background-color-end);
+}
+
+.bg-5 {
+  background-color: var(--content-bg-color);
+}
+
+.color-5 {
+  color: var(--content-bg-color);
+}
+
+.bg-6 {
+  background-color: var(--topbar-border-color);
+}
+
+.color-6 {
+  color: var(--topbar-border-color);
+}
+
+.bg-7 {
+  background-color: var(--logo-color);
+}
+
+.color-7 {
+  color: var(--logo-color);
+}
+
 .copyright {
   color: var(--background-color-start);
 }
@@ -688,7 +744,7 @@ button:hover {
     mask-image: linear-gradient(to bottom, transparent 1%, black 50%, black);
   }
   .top-bar-container {
-    height: 64px;
+    height: 94px;
   }
   .top-bar-button-img {
     display: none;
