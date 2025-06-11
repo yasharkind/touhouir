@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: bkoodak;
   src: url(/fonts/B\ Koodak\ Bold_0.ttf)
@@ -31,8 +32,8 @@
 
 .scheme-marisa {
   --discord-embed-shadow: #422040;
-  --background-color-start: #E57A44;
-  --background-color-end: #D6DBB2;
+  --background-color-start: #D6DBB2;
+  --background-color-end: #E57A44;
   --content-bg-color: #BCD8C1;
   --topbar-color: #E3D985;
   --topbar-border-color: #E3D985;
@@ -62,9 +63,10 @@
   }
 
   .scheme-marisa {
+  
   --discord-embed-shadow: #422040;
-  --background-color-start: #D6DBB2;
-  --background-color-end: #E57A44;
+  --background-color-start: #E57A44;
+  --background-color-end: #8b5f26;
   --content-bg-color: #BCD8C1;
   --topbar-color: #E3D985;
   --topbar-border-color: #E3D985;
@@ -812,4 +814,14 @@ button:hover {
 
 .dejavu {
   font-family: dejavu;
+}
+
+.left-img {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .left-img {
+    display: none;
+  }
 }
