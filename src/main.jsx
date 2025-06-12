@@ -26,6 +26,7 @@ createRoot(document.getElementById('root')).render(
             <Route path='characters' element={<CharactersPage />} />
             <Route path='characters/reimu' element={<Reimu />} />
             <Route path='characters/marisa' element={<Marisa />} />
+            <Route path="*" element={<WIP />} />
         </Routes>
     </BrowserRouter>
 )

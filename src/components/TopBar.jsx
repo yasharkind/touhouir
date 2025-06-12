@@ -71,7 +71,6 @@ const customTheme = createTheme({
 
 const TopBarButton = (props) => {
 
-  const navigate = useNavigate();
   if (props.items)
     return (<div className="top-bar-button">
       <MegaMenuDropdown className="border-transparent shadow-none bg-transparent megamenu-button" toggle={<div className="bg-transparent" style={{ alignSelf: "center", justifySelf: "center" }}>{props.name}</div>}>

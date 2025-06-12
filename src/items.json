@@ -90,7 +90,15 @@
                 {
                     "name": "Marisa",
                     "prt": "/chars/marisa/portrait.png",
-                    "url": "/characters/marisa"
+                    "url": "/characters/marisa",
+                    "fullname": "霧雨魔理沙 Marisa Kirisame",
+                    "race": "انسان",
+                    "description": "ماریسا یک جادوگر معمولی، یکی از دو شخصیت اصلی بازی های توهو هست که از بازی دوم وارد توهو شد.  ماریسا شخصیتی پرانرژی، خودجوش و گاهی هم لجباز داره، و به جمع‌آوری کتاب‌ها و آیتم‌های جادویی (حتی اگر صاحبشون نباشه!) علاقه‌منده. حضور پررنگش تو بیشتر بازی‌ها و رابطه‌ی بامزه‌اش با شخصیت‌هایی مثل ریمو، باعث شده یکی از محبوب‌ترین شخصیت‌های دنیا‌ی توهو باشه.",
+                    "topimages": ["/chars/marisa/marisa1.png", "/chars/marisa/marisa2.png"],
+                    "songs" : [{"name": "Love Colored Master Spark!:", "url": "/chars/marisa/theme.ogg"}],
+                    "fansongs": ["RNmlUFhNWw8"],
+                    "sliderimages": ["/chars/marisa/slider1.jpg", "/chars/marisa/slider2.jpg", "/chars/marisa/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Marisa_Kirisame"]
                 }
             ]
         },
