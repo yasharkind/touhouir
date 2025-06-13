@@ -5,9 +5,8 @@ const RedirectRoot = () => {
 
     const navigate = useNavigate()
     useEffect(() => {
-
         navigate("/home")
-    }, [])
+    }, [navigate])
     return (<></>)
 }
 

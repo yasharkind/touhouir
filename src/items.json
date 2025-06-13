@@ -85,7 +85,16 @@
                 {
                     "name": "Reimu",
                     "prt": "/chars/reimu/portrait.png",
-                    "url": "/characters/reimu"
+                    "url": "/characters/reimu",
+                    "fullname": "博麗霊夢 Reimu Hakurei",
+                    "race": "انسان",
+                    "description": "placeholder",
+                    "topimages": ["/chars/marisa/marisa1.png", "/chars/marisa/marisa2.png"],
+                    "songs" : [{"name": "Maiden's Capriccio ~ Dream Battle:", "url": "/chars/reimu/theme.ogg"}],
+                    "fansongs": ["RNmlUFhNWw8"],
+                    "sliderimages": ["/chars/reimu/slider1.jpg", "/chars/reimu/slider2.jpg", "/chars/reimu/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Reimu_Hakurei"],
+                    "leftimgoffset": "60% 25%"
                 },
                 {
                     "name": "Marisa",

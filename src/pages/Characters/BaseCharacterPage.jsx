@@ -18,7 +18,7 @@ const BaseCharacterPage = (props) => {
                 <div className="text-2xl text-right w-full mt-4 mb-4" >
                     معرفی:
                 </div>
-                <div className="flex flex-row">
+                <div className="w-full flex flex-row justify-between">
                     <div className="text-xl text-right w-full bg-touhou">
                         نام کامل: {props.items.fullname}
                         <br />
@@ -27,7 +27,7 @@ const BaseCharacterPage = (props) => {
                         <br />
                         {props.items.description}
                     </div>
-                    <div className={`left-img w-1/2 h-96 bg-[url(/chars/${props.items.name.toLowerCase()}/left.jpg)] h-96 object-cover bg-position-[25%] mask-r-from-30% mask-r-to-90% rounded-[12px]`}>
+                    <div style={{background: `url('/chars/${props.items.name.toLowerCase()}/left.jpg')`, backgroundPosition: props.items.leftimgoffset || '25%'}} className={`left-img w-1/2 h-96 h-96 object-cover mask-r-from-30% mask-r-to-90% rounded-[12px]`}>
                     </div>
                 </div>
                 <div className="text-2xl text-right w-full mt-4 mb-4" >
@@ -45,7 +45,7 @@ const BaseCharacterPage = (props) => {
                     </>)
                     })}
                 </div>
-                <div className="text-2xl text-right w-full m-4">چند تا فن کاور:</div>
+                <div className="text-2xl text-right w-full mt-4 mb-4">چند تا فن کاور:</div>
                 <div className="w-full flex flex-row flex-auto flex-wrap items-center justify-center pt-6 pb-6 ">
                     {props.items.fansongs.map(song => {
                         return <YoutubeEmbed key={song} id={song} />

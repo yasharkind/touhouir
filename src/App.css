@@ -40,6 +40,17 @@
   --logo-color: #422040;
 }
 
+.scheme-reimu {
+  
+  --discord-embed-shadow: #090809;
+  --background-color-start: #F4796B;
+  --background-color-end: #F40000;
+  --content-bg-color: #F44E3F;
+  --topbar-color: #F44E3F;
+  --topbar-border-color: #F4998D;
+  --logo-color: #090809;
+}
+
 .scheme-characters {
   --discord-embed-shadow: #8C2155;
   --topbar-color: #AED4E6;
@@ -72,6 +83,18 @@
   --topbar-border-color: #E3D985;
   --logo-color: #422040;
 }
+
+.scheme-reimu {
+  
+  --discord-embed-shadow: #AF9BB6;
+  --background-color-start: #2F1213;
+  --background-color-end: #9A7A91;
+  --content-bg-color: #440D0F;
+  --topbar-color: #603A40;
+  --topbar-border-color: #84596B;
+  --logo-color: #AF9BB6;
+}
+
 .scheme-characters {
   --discord-embed-shadow: #AED4E6;
   --topbar-color: #741E38;
@@ -140,9 +163,6 @@
   color: var(--logo-color);
 }
 
-.copyright {
-  color: var(--background-color-start);
-}
 
 
 a {
