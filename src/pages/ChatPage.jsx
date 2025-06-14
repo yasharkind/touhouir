@@ -2,7 +2,7 @@ import '../index.css'
 import '../App.css'
 import { useRef, useState } from 'react'
 
-const backendws = "ws://5.10.248.171:3000/ws"
+const backendws = "wss://5.10.248.171:3000/ws"
 
 const ChatPage = () => {
     const ws = useRef(null)
@@ -49,7 +49,7 @@ const ChatPage = () => {
         <div className='flex flex-col h-screen scheme-home'>
             <div className="w-full h-9/10 max-h-9/10 overflow-auto flex flex-col-reverse p-4" >
                 {_messages.toReversed().map(message => {
-                    return <div className='color-4' dir="auto">
+                    return <div className='color-4 dejavu' dir="auto">
                         {message}
                     </div>
                 })}
