@@ -57,7 +57,7 @@ const ChatPage = () => {
             <div className="w-full h-1/10 bg-1 content-center" >
                 <div className="flex flex-row m-auto">
                     <input placeholder="name" value={_name} type="text" className='min-w-[100px] w-1/10 color-3 bg-1 dejavu' onChange={a => { localStorage.setItem("name", a.target.value); setName(_ => a.target.value) }} />
-                    <input placeholder='message' value={_input} type="text" className='w-full color-3 bg-1 dejavu' onKeyDown={k => { if (k.key === "Enter") { SendToWs(_input); setInput(_ => "");  }}} onChange = { a => setInput(_ => a.target.value)}/>
+                    <input placeholder='message' value={_input} type="text" className='w-full color-3 bg-1 dejavu' onKeyDown={k => { if (_name && _input && k.key === "Enter") { SendToWs(_input); setInput(_ => "");  }}} onChange = { a => setInput(_ => a.target.value)}/>
                     <button className='bg-2' onClick={_ => { if(_name && _input) SendToWs(_input) }} />
                 </div>
             </div>
