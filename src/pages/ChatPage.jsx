@@ -2,7 +2,7 @@ import '../index.css'
 import '../App.css'
 import { useRef, useState } from 'react'
 
-const backendws = "wss://5.10.248.171:3000/ws"
+const backendws = "ws://5.10.248.171:3000/ws"
 
 const ChatPage = () => {
     const ws = useRef(null)
