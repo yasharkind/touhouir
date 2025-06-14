@@ -10,6 +10,7 @@ import "flowbite/dist/flowbite.css";
 import Reimu from './pages/Characters/Reimu.jsx'
 import Marisa from './pages/Characters/Marisa.jsx'
 import CharactersPage from './pages/CharactersPage.jsx'
+import ChatPage from './pages/ChatPage.jsx'
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
             <Route path='games' element={<WIP />} >
                 <Route path="*" element={<WIP />} />
             </Route>
+            <Route path="chat" element={<ChatPage />} />
             <Route path='music' element={<WIP />} />
             <Route path='fangames' element={<WIP />} />
             <Route path='manga' element={<WIP />} />
