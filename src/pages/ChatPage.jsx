@@ -2,7 +2,7 @@ import '../index.css'
 import '../App.css'
 import { useEffect, useRef, useState } from 'react'
 
-const backendws = "wss://chat.touhou.ir:3000/ws"
+const backendws = "ws://chat.touhou.ir:3000/ws"
 
 const ChatPage = () => {
     const ws = useRef(null)
