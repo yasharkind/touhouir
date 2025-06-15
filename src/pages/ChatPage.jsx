@@ -64,7 +64,7 @@ const ChatPage = () => {
                 <div className="flex flex-row m-auto">
                     <div className='flex-col flex min-w-[100px] w-1/10 rounded-xl mr-1 ml-1'>
                     <input placeholder="name" value={_name} type="text" className='rounded-xl color-3 bg-1 dejavu' onChange={a => { localStorage.setItem("name", a.target.value); setName(_ => a.target.value) }} />
-                    <input placeholder="password" value={_password} type="text" className='rounded-xl color-3 bg-1 dejavu' onChange={a => { localStorage.setItem("password", a.target.value); setPassword(_ => a.target.value) }} />
+                    <input placeholder="password" value={_password} type="password" className='rounded-xl color-3 bg-1 dejavu' onChange={a => { localStorage.setItem("password", a.target.value); setPassword(_ => a.target.value) }} />
                     </div>
 
                     <div className='w-full flex flex-row items-center'>
