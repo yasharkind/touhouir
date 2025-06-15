@@ -1,5 +1,5 @@
 import locale from "../locale.json"
-import AnimateEnter from "./AnimateEnter"
+import { AnimateEnter } from "./AnimateEnter"
 
 const ResourceContent = (props) => {
     return (

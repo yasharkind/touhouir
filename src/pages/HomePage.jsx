@@ -5,6 +5,7 @@ import locale from '../locale.json'
 import CategoryBlock from '../components/CategoryBlock'
 import TopBar from '../components/TopBar'
 import Footer from '../components/Footer'
+import { AnimateEnter2 } from '../components/AnimateEnter'
 
 let images = ["/slider/top1.jpg", "/slider/top2.jpg", "/slider/top3.jpg", "/slider/top4.jpg"]
 
@@ -12,11 +13,19 @@ const HomePage = () => {
 	const [wipDisplay, toggleWipDisplay] = useState("")
 	return (<>
 		<div className="scheme-home">
-
 			<div className={`wip-alert ${wipDisplay}`} onClick={() => { toggleWipDisplay(() => "invisible") }} dir='rtl'>
 				<div style={{ alignSelf: "center" }}>
 					سایت هنوز در حال ساخته شدن است. برای ثبت پیشنهادات وارد سرور دیسکور شوید
 				</div>
+			</div>
+			<div className='fixed right-5 bottom-5 w-[50px] h-[50px] z-[100]'>
+			<AnimateEnter2>
+			<a href='http://touhou.ir/chat'>
+			<button className="w-[50px] h-[50px] bg-4" >
+				<img src="/homepage/chat.svg" className='scale-[3]' />
+			</button>
+			</a>
+			</AnimateEnter2>
 			</div>
 			<TopBar />
 			<ImageSlider images={images} />

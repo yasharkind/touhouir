@@ -1,4 +1,4 @@
-import AnimateEnter from "./AnimateEnter"
+import { AnimateEnter } from "./AnimateEnter"
 
 const CategoryBlock = (props) => {
 
