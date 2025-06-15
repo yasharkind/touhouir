@@ -1,18 +1,21 @@
 import '../index.css'
 import '../App.css'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-const backendws = "ws://5.10.248.171:3000/ws"
+const backendws = "ws://chat.touhou.ir:3000/ws"
 
 const ChatPage = () => {
     const ws = useRef(null)
     const [_name, setName] = useState("")
+    const [_password, setPassword] = useState("")
     const [_messages, setMessages] = useState([])
     const audioRef = useRef(null);
     
-    useState(() => {
+    useEffect(() => {
+
         console.log("refreshed")
         setName(_ => localStorage.getItem("name") || "")
+        setPassword(_ => localStorage.getItem("password") || "")
 
         ws.current = new WebSocket(backendws)
 
@@ -25,6 +28,7 @@ const ChatPage = () => {
             const message = event.data
             setMessages(l => l.concat(message))
         }
+
         return () => {
             ws.current?.close()
         }
@@ -33,9 +37,11 @@ const ChatPage = () => {
 
 
 
-    const SendToWs = (__input) => {
+    const SendToWs = (name, password, message) => {
         if (ws.current?.readyState === WebSocket.OPEN) {
-            ws.current.send(_name + ": " + __input)
+            var wsJson = {"sender": name, "password": password, "content": message}
+            console.log(wsJson);
+            ws.current.send(JSON.stringify(wsJson))
         } else {
             console.warn("WebSocket not connected")
         }
@@ -56,9 +62,18 @@ const ChatPage = () => {
             </div>
             <div className="w-full h-1/10 bg-1 content-center" >
                 <div className="flex flex-row m-auto">
-                    <input placeholder="name" value={_name} type="text" className='min-w-[100px] w-1/10 color-3 bg-1 dejavu' onChange={a => { localStorage.setItem("name", a.target.value); setName(_ => a.target.value) }} />
-                    <input placeholder='message' value={_input} type="text" className='w-full color-3 bg-1 dejavu' onKeyDown={k => { if (_name && _input && k.key === "Enter") { SendToWs(_input); setInput(_ => "");  }}} onChange = { a => setInput(_ => a.target.value)}/>
-                    <button className='bg-2' onClick={_ => { if(_name && _input) SendToWs(_input) }} />
+                    <div className='flex-col flex min-w-[100px] w-1/10 rounded-xl mr-1 ml-1'>
+                    <input placeholder="name" value={_name} type="text" className='rounded-xl color-3 bg-1 dejavu' onChange={a => { localStorage.setItem("name", a.target.value); setName(_ => a.target.value) }} />
+                    <input placeholder="password" value={_password} type="text" className='rounded-xl color-3 bg-1 dejavu' onChange={a => { localStorage.setItem("password", a.target.value); setPassword(_ => a.target.value) }} />
+                    </div>
+
+                    <div className='w-full flex flex-row items-center'>
+                    <input placeholder='message' value={_input} type="text" className='w-full color-3 bg-1 dejavu max-h-[50px] rounded-xl' onKeyDown={k => { if (_name && _password && _input && k.key === "Enter") { SendToWs(_name, _password, _input); setInput(_ => "");  }}} onChange = { a => setInput(_ => a.target.value)}/>
+                    
+                    <button className='bg-2 h-[50px] w-[50px] ml-1 mr-1 rounded-xl' onClick={_ => {{ if(_name && _password && _input) SendToWs(_name, _password ,_input); setInput(_ => "")}}}>
+                    <img src="/chatpage/send.png" className='scale-[3]'/>
+                    </button>
+                    </div>  
                 </div>
             </div>
         </div>
