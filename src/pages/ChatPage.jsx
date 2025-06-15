@@ -52,7 +52,7 @@ const ChatPage = () => {
         src="/chatpage/send.ogg"
         preload="auto"
       />
-        <div className='flex flex-col h-screen scheme-home'>
+        <div className='flex flex-col h-dvh scheme-home'>
             <div className="w-full h-9/10 max-h-9/10 overflow-auto flex flex-col-reverse p-4" >
                 {_messages.toReversed().map(message => {
                     return <div className='color-4 dejavu' dir="auto">
@@ -60,7 +60,7 @@ const ChatPage = () => {
                     </div>
                 })}
             </div>
-            <div className="w-full h-1/10 bg-1 content-center" >
+            <div className="w-full h-1/10 min-h-[120px] bg-1 content-center" >
                 <div className="flex flex-row m-auto">
                     <div className='flex-col flex min-w-[100px] w-1/10 rounded-xl mr-1 ml-1'>
                     <input placeholder="name" value={_name} type="text" className='rounded-xl color-3 bg-1 dejavu' onChange={a => { localStorage.setItem("name", a.target.value); setName(_ => a.target.value) }} />
