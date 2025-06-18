@@ -846,3 +846,7 @@ button:hover {
     display: none;
   }
 }
+
+.chat-message {
+  border-top: solid 2px var(--logo-color);
+}
