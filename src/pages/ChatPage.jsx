@@ -74,8 +74,10 @@ const ChatPage = () => {
                 formData.append('sender', nameRef.current.value)
                 formData.append('password', passwordRef.current.value)
                 fetch(backendupload, {"method": "POST", "body": formData})
+                fileRef.current.value = ""
             }
             reader.readAsArrayBuffer(fileRef.current?.files[0])
+            
         }
         
         if (ws.current?.readyState === WebSocket.OPEN) {
