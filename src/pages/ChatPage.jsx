@@ -2,8 +2,8 @@ import '../index.css'
 import '../App.css'
 import { useEffect, useRef, useState } from 'react'
 
-const backendws = "ws://chat.touhou.ir:3000/ws"
-const backendupload = "http://chat.touhou.ir:3000/upload"
+const backendws = "wss://chat.touhou.ir:3000/ws"
+const backendupload = "https://chat.touhou.ir:3000/upload"
 
 const classifyMessage = (msg) => {
     const urlPattern = /^http:\/\/[^\/]+\/files\/.+(\.(jpg|jpeg|png))$/;
@@ -60,7 +60,7 @@ const ChatPage = () => {
             audioRef.current.play()
             console.log(event.data)
             const obj = JSON.parse(event.data)
-            
+            console.log(obj)
             setMessages(l => l.concat(obj))
         }
     }
