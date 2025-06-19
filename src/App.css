@@ -848,5 +848,5 @@ button:hover {
 }
 
 .chat-message {
-  border-top: solid 2px var(--logo-color);
+  border-top: solid 2px var(--content-bg-color);
 }
