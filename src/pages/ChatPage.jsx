@@ -2,9 +2,9 @@ import '../index.css'
 import '../App.css'
 import { useEffect, useRef, useState } from 'react'
 
-const backendws = "ws://chat.touhou.ir:3000/ws"
-const backendupload = "http://chat.touhou.ir:3000/upload"
-const backendavatars = "http://chat.touhou.ir:3000/avatar"
+const backendws = "ws://chat.touhou.ir:3001/ws"
+const backendupload = "http://chat.touhou.ir:3001/upload"
+const backendavatars = "http://chat.touhou.ir:3001/avatar"
 
 const classifyMessage = (msg) => {
     const imgPattern = /^http:\/\/[^\/]+\/files\/.+(\.(jpg|jpeg|png|webp|gif))$/;
@@ -23,7 +23,7 @@ const classifyMessage = (msg) => {
 
 const Profile = (props) => {
     return <div key={`1bot${props.keyy}`} className="flex flex-row items-center p-4">
-        <img key={`2bot${props.keyy}`} className="rounded-[1000px] h-[50px] w-[50px] mr-2" src={`${backendavatars}/${props.sender}.png`} />
+        <img key={`2bot${props.keyy}`} className="rounded-[1000px] h-[50px] w-[50px] mr-2" src={`${props.avatar}`} />
         <div key={`3bot${props.keyy}`}> {props.sender}</div>
         :
     </div>
@@ -75,6 +75,9 @@ const ChatPage = () => {
         ws.current.onmessage = (event) => {
             audioRef.current.play()
             const obj = JSON.parse(event.data)
+            
+            console.log(obj);
+            
             setMessages(l => l.concat(obj))
         }
     }
@@ -124,28 +127,28 @@ const ChatPage = () => {
                         case "image":
                             return <div key={`1top${index}`} className={`${border} dejavu pt-2`}>
                                 <div key={`2top${index}`} className={border2}>
-                                    {border  && <Profile keyy={`3top${index}`} sender={message.sender} />}
+                                    {border  && <Profile keyy={`3top${index}`} sender={message.sender} avatar={message.avatar} />}
                                 </div>
                                 <img key={`4top${index}`} src={message.content} className='max-w-1/2' /></div>
                         case "audio":
                             return <div key={`1top${index}`} className={`${border} dejavu pt-2`}>
                                 <div key={`2top${index}`} className={border2}>
                                     ${<Profile keyy={`3top${index}`} sender={message.sender} />}
-                                    {border && <Profile keyy={`4top${index}`} sender={message.sender} />}
+                                    {border && <Profile keyy={`4top${index}`} sender={message.sender} avatar={message.avatar} />}
                                 </div>
                                 <audio key={`5top${index}`} src={message.content} className='max-w-1/2' controls /></div>
                         case "video":
                             return <div key={`1top${index}`} className={`${border} dejavu pt-2`}>
                                 <div key={`2top${index}`} className={border2}>
 
-                                    {border && <Profile keyy={`2top${index}`} sender={message.sender} />}
+                                    {border && <Profile keyy={`2top${index}`} sender={message.sender} avatar={message.avatar} />}
                                 </div>
                                 <video src={message.content} key={`3top${index}`} className='max-w-1/2' controls /></div>
                     }
                     return <div key={`7idk1${index}`} className={`color-4 dejavu ${border}`} dir="ltr">
                         <div key={`6idk2${index}`} className="flex flex-row">{border &&
                             <div key={`5idk3${index}`} className='color-7 pb-2 pt-2'>
-                                {<Profile keyy={`2top${index}`} sender={message.sender} />}
+                                {<Profile keyy={`2top${index}`} sender={message.sender} avatar={message.avatar} />}
                             </div>}
                         </div>
                         <div key={`4idk4${index}`} className='flex flex-row item-center p-2'>
