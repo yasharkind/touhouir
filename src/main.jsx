@@ -20,7 +20,6 @@ createRoot(document.getElementById('root')).render(
             <Route path='games' element={<WIP />} >
                 <Route path="*" element={<WIP />} />
             </Route>
-            <Route path="chat" element={<ChatPage />} />
             <Route path='music' element={<WIP />} />
             <Route path='fangames' element={<WIP />} />
             <Route path='manga' element={<WIP />} />
