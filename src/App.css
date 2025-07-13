@@ -52,6 +52,16 @@
   --logo-color: #090809;
 }
 
+.scheme-cirno {
+  --discord-embed-shadow: #374B4A;
+  --logo-color: #526760; 
+  --background-color-start: #6F7987;
+  --topbar-border-color: #8B8BAE;
+  --background-color-end: #88D9E6;
+  --content-bg-color: #A7ECF2;
+  --topbar-color: #C5FFFD;
+}
+
 .scheme-characters {
   --discord-embed-shadow: #8C2155;
   --topbar-color: #AED4E6;
@@ -94,6 +104,15 @@
   --topbar-color: #603A40;
   --topbar-border-color: #84596B;
   --logo-color: #AF9BB6;
+}
+.scheme-cirno {
+  --discord-embed-shadow: #C5FFFD;
+  --logo-color: #A7ECF2; 
+  --background-color-start: #88D9E6;
+  --topbar-border-color: #8B8BAE;
+  --background-color-end: #6F7987;
+  --content-bg-color: #526760;
+  --topbar-color: #374B4A;
 }
 
 .scheme-characters {

@@ -15,7 +15,10 @@ const classifyMessage = (msg) => {
     }
     if (audioPattern.test(msg)) {
         return "audio"
-    }
+    }const backendws = "ws://chat.touhou.ir:3000/ws"
+const backendupload = "http://chat.touhou.ir:3000/upload"
+const backendavatars = "http://chat.touhou.ir:3000/avatar"
+
     if (videoPattern.test(msg)) {
         return "video"
     }

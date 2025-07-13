@@ -4,12 +4,13 @@ import ImageSlider from '../../components/ImageSlider'
 import TopBar from '../../components/TopBar'
 import YoutubeEmbed from '../../components/YoutubeEmbed'
 const BaseCharacterPage = (props) => {
+    console.log(props.items.topimages)
     return (<><div className={`scheme-${props.items.name.toLowerCase()} w-full`}>
         <TopBar />
         <div className="bg" >
             <div className="flex flex-row" >
                 {props.items.topimages.map(image => {
-                    <img className="m-auto" key={image} src={image} />
+                    return <img className="m-auto" key={image} src={image} />
                 })
 
                 }

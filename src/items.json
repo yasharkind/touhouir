@@ -88,10 +88,10 @@
                     "url": "/characters/reimu",
                     "fullname": "博麗霊夢 Reimu Hakurei",
                     "race": "انسان",
-                    "description": "placeholder",
-                    "topimages": ["/chars/marisa/marisa1.png", "/chars/marisa/marisa2.png"],
+                    "description": "ریمو نگهبان معبد هاكوره‌ای و شخصیت اصلی مجموعه توهوئه. اون دختری آروم، خونسرد و در عین حال قدرتمنده که وظیفه‌اش حفظ تعادل بین انسان‌ها و موجودات ماورایی در گنسوکیوئه. با اینکه همیشه درگیر حل کردن مشکلات و اتفاقات عجیب می‌شه، معمولاً با کم‌ترین زحمت و بیش‌ترین موفقیت از پسشون برمیاد! ریمو به پرواز کردن، نوشیدن چای و گرفتن نذری (!) علاقه داره و تکنیک مشهورش Yin-Yang Orb بخشی از سبک مبارزه‌ی اونه.",
+                    "topimages": [],
                     "songs" : [{"name": "Maiden's Capriccio ~ Dream Battle:", "url": "/chars/reimu/theme.ogg"}],
-                    "fansongs": ["RNmlUFhNWw8"],
+                    "fansongs": ["iBr_Y579HaA", "aaNPn70htqs"],
                     "sliderimages": ["/chars/reimu/slider1.jpg", "/chars/reimu/slider2.jpg", "/chars/reimu/slider3.jpg"],
                     "wikiurl": ["https://en.touhouwiki.net/wiki/Reimu_Hakurei"],
                     "leftimgoffset": "60% 25%"
@@ -119,7 +119,16 @@
                 {
                     "name": "Cirno",
                     "prt": "/chars/cirno/portrait.png",
-                    "url": "/characters/cirno"
+                    "url": "/characters/cirno",
+                    "fullname": "チルノ Cirno",
+                    "race": "پری",
+                    "description": "چیرنو یه پری یخی بازیگوش و پرانرژیه که خودش رو «باهوش‌ترین» موجود گنسوکیو می‌دونه! با اینکه از نظر قدرت جزو شخصیت‌های ضعیف‌تر به حساب میاد، ولی اعتماد‌به‌نفس بالا و حضور بامزه‌ش باعث شده یکی از محبوب‌ترین شخصیت‌های توهو بشه. چیرنو توانایی کنترل یخ و سرما رو داره و معمولاً اطراف دریاچه‌ی مه‌آلود پیدا می‌شه. عدد ⑨ هم به شوخی به عنوان «شماره‌ی سادگی» بهش نسبت داده شده!",
+                    "topimages": [],
+                    "songs" : [{"name": "Beloved tomboyish girl:", "url": "/chars/cirno/theme.ogg"}],
+                    "fansongs": ["GNeyqFfXf7k", "7h7bnYA1LXE", "e4WnqqwdrcU"],
+                    "sliderimages": ["/chars/cirno/slider1.jpg", "/chars/cirno/slider2.jpg", "/chars/cirno/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Cirno"],
+                    "leftimgoffset": "100%"
                 },
                 {
                     "name": "Remilia",
