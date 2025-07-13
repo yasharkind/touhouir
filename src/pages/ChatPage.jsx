@@ -2,9 +2,9 @@ import '../index.css'
 import '../App.css'
 import { useEffect, useRef, useState } from 'react'
 
-const backendws = "ws://localhost:3000/ws"
-const backendupload = "http://localhost:3000/upload"
-const backendavatars = "http://localhost:3000/avatar"
+const backendws = "ws://chat.touhou.ir:3000/ws"
+const backendupload = "http://chat.touhou.ir:3000/upload"
+const backendavatars = "http://chat.touhou.ir:3000/avatar"
 
 const classifyMessage = (msg) => {
     const imgPattern = /^http:\/\/[^\/]+\/files\/.+(\.(jpg|jpeg|png|webp|gif))$/;
