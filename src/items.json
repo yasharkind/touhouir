@@ -138,7 +138,7 @@
                     "race": "خون‌آشام",
                     "description": "رمیلیا یه خون‌آشام قدرتمند و بانوی عمارت اسکارلت در گنسوکیوئه. با اینکه ظاهرش شبیه یه دختر بچه‌ست، ولی در واقع سنی چند صد ساله داره! شخصیتش مغرور، باوقار و گاهی هم خودرأیه، اما رفتارش همیشه جدی نیست—گاهی هم بامزه و حتی کودکانه می‌شه. قدرت اصلی رمیلیا کنترل سرنوشت‌هاست، و با حمله‌ی معروفش Spear the Gungnir شناخته می‌شه. خواهر کوچیک‌ترش، فلاندره، هم یکی از ساکنان مرموز عمارتشه.",
                     "topimages": [],
-                    "songs": [{"name": "", "url": "/chars/remilia/theme.ogg"}],
+                    "songs": [{"name": "Septette for a Dead Princess", "url": "/chars/remilia/theme.ogg"}],
                     "fansongs": ["7h7bnYA1LXE", "9r-NyQ_DCx4"],
                     "sliderimages": ["/chars/remilia/slider1.jpg", "/chars/remilia/slider2.jpg", "/chars/remilia/slider3.jpg"],
                     "wikiurl": ["https://en.touhouwiki.net/wiki/Remilia_Scarlet"],
@@ -147,7 +147,16 @@
                 {
                     "name": "Flandre",
                     "prt": "/chars/flandre/portrait.png",
-                    "url": "/characters/flandre"
+                    "url": "/characters/flandre",
+                    "fullname": "Flandre Scarlet",
+                    "race": "خون‌آشام",
+                    "description": "فلاندره خواهر کوچکتر رمیلیا و یکی از مرموزترین شخصیت‌های توهوئه. با اینکه ظاهری معصوم و کودکانه داره، قدرتش بسیار زیاده و کنترلش سخته؛ به همین دلیل سال‌هاست در زیرزمین عمارت اسکارلت زندانی شده. فلاندره شخصیتی ترکیبی از معصومیت، جنون و کنجکاوی داره. حمله‌ی معروفش Laevatein و توانایی نابود کردن هر چیزی با شناخت \"هسته‌ی وجودی\" اون، از نمادهای قدرت ترسناکشه. با همه‌ی این‌ها، هنوز هم یه کودک تنهاست که دنبال بازی و ارتباط با دیگرانه.",
+                    "topimages": [],
+                    "songs": [{"name": "U.N. Owen Was Her", "url": "/characters/flandre/theme.ogg"}],
+                    "fansongs": ["cvEC00eLkns"],
+                    "sliderimages": ["/chars/flandre/slider1.jpg", "/chars/flandre/slider2.jpg", "/chars/flandre/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Flandre_Scarlet"],
+                    "leftimgoffset": "10%"
                 },
                 {
                     "name": "Sakuya",
