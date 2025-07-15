@@ -133,7 +133,16 @@
                 {
                     "name": "Remilia",
                     "prt": "/chars/remilia/portrait.png",
-                    "url": "/characters/remilia"
+                    "url": "/characters/remilia",
+                    "fullname": "Remilia Scarlet",
+                    "race": "خون‌آشام",
+                    "description": "رمیلیا یه خون‌آشام قدرتمند و بانوی عمارت اسکارلت در گنسوکیوئه. با اینکه ظاهرش شبیه یه دختر بچه‌ست، ولی در واقع سنی چند صد ساله داره! شخصیتش مغرور، باوقار و گاهی هم خودرأیه، اما رفتارش همیشه جدی نیست—گاهی هم بامزه و حتی کودکانه می‌شه. قدرت اصلی رمیلیا کنترل سرنوشت‌هاست، و با حمله‌ی معروفش Spear the Gungnir شناخته می‌شه. خواهر کوچیک‌ترش، فلاندره، هم یکی از ساکنان مرموز عمارتشه.",
+                    "topimages": [],
+                    "songs": [{"name": "", "url": "/chars/remilia/theme.ogg"}],
+                    "fansongs": ["7h7bnYA1LXE", "9r-NyQ_DCx4"],
+                    "sliderimages": ["/chars/remilia/slider1.jpg", "/chars/remilia/slider2.jpg", "/chars/remilia/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Remilia_Scarlet"],
+                    "leftimgoffset": "85% 10%"
                 },
                 {
                     "name": "Flandre",

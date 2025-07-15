@@ -31,7 +31,7 @@ const BaseCharacterPage = (props) => {
                     <div style={{background: `url('/chars/${props.items.name.toLowerCase()}/left.jpg')`, backgroundPosition: props.items.leftimgoffset || '25%'}} className={`left-img w-1/2 h-96 h-96 object-cover mask-r-from-30% mask-r-to-90% rounded-[12px]`}>
                     </div>
                 </div>
-                <div className="text-2xl text-right w-full mt-4 mb-4" >
+                <div className="text-2xl text-right w-full mt-4 mb-4">
                     آهنگ ها:
                 </div>
                 <div className="flex flex-col w-full dejavu justify-center items-center mt-4 mb-4" dir="ltr">
