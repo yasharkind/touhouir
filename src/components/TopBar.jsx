@@ -91,7 +91,7 @@ const TopBarButton = (props) => {
                     initial={{ height: 'auto', opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 'auto', opacity: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0 }}
                     key={item}
                   >
                     {item.items.map(innerItem => { return (<a className="inner-item" href={innerItem.url} key={innerItem.url}>{innerItem.name}</a>) })}
