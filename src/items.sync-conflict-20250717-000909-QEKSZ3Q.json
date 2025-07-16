@@ -1,0 +1,228 @@
+{
+    "gameitems": [
+        {
+            "name": "All",
+            "url": "/Games"
+        },
+        {
+            "name": "bullet hell",
+            "url": "/games/bullethell",
+            "items": [
+                {
+                    "name": "All",
+                    "url": "/games/bullethell"
+                },
+                {
+                    "name": "touhou 6",
+                    "url": "/games/bullethell/6"
+                },
+                {
+                    "name": "touhou 7",
+                    "url": "/games/bullethell/7"
+                },
+                {
+                    "name": "touhou 8",
+                    "url": "/games/bullethell/8"
+                },
+                {
+                    "name": "touhou 11",
+                    "url": "/games/bullethell/11"
+                },
+                {
+                    "name": "touhou 15",
+                    "url": "/games/bullethell/15"
+                }
+            ]
+        },
+        {
+            "name": "Fighting",
+            "url": "/games/fighting",
+            "items": [
+                {
+                    "name": "All",
+                    "url": "/games/fighting"
+                },
+                {
+                    "name": "hisotensoku",
+                    "url": "/games/fighting/123"
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "url": "/games/other",
+            "items": [
+                {
+                    "name": "All",
+                    "url": "/games/other"
+                },
+                {
+                    "name": "touhou 17.5",
+                    "url": "/games/other/175"
+                }
+            ]
+        }
+    ],
+    "musicitems": [
+        {
+            "name": "official music",
+            "url": "/music/official"
+        },
+        {
+            "name": "fan music",
+            "url": "/music/fanmade"
+        }
+    ],
+    "charitems": [
+        {
+            "name": "All",
+            "url": "/characters"
+        },
+        {
+            "name": "Main",
+            "url": "/characters",
+            "items": [
+                {
+                    "name": "Reimu",
+                    "prt": "/chars/reimu/portrait.png",
+                    "url": "/characters/reimu",
+                    "fullname": "博麗霊夢 Reimu Hakurei",
+                    "race": "انسان",
+                    "description": "ریمو نگهبان معبد هاكوره‌ای و شخصیت اصلی مجموعه توهوئه. اون دختری آروم، خونسرد و در عین حال قدرتمنده که وظیفه‌اش حفظ تعادل بین انسان‌ها و موجودات ماورایی در گنسوکیوئه. با اینکه همیشه درگیر حل کردن مشکلات و اتفاقات عجیب می‌شه، معمولاً با کم‌ترین زحمت و بیش‌ترین موفقیت از پسشون برمیاد! ریمو به پرواز کردن، نوشیدن چای و گرفتن نذری (!) علاقه داره و تکنیک مشهورش Yin-Yang Orb بخشی از سبک مبارزه‌ی اونه.",
+                    "topimages": [],
+                    "songs" : [{"name": "Maiden's Capriccio ~ Dream Battle:", "url": "/chars/reimu/theme.ogg"}],
+                    "fansongs": ["iBr_Y579HaA", "aaNPn70htqs"],
+                    "sliderimages": ["/chars/reimu/slider1.jpg", "/chars/reimu/slider2.jpg", "/chars/reimu/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Reimu_Hakurei"],
+                    "leftimgoffset": "60% 25%"
+                },
+                {
+                    "name": "Marisa",
+                    "prt": "/chars/marisa/portrait.png",
+                    "url": "/characters/marisa",
+                    "fullname": "霧雨魔理沙 Marisa Kirisame",
+                    "race": "انسان",
+                    "description": "ماریسا یک جادوگر معمولی، یکی از دو شخصیت اصلی بازی های توهو هست که از بازی دوم وارد توهو شد.  ماریسا شخصیتی پرانرژی، خودجوش و گاهی هم لجباز داره، و به جمع‌آوری کتاب‌ها و آیتم‌های جادویی (حتی اگر صاحبشون نباشه!) علاقه‌منده. حضور پررنگش تو بیشتر بازی‌ها و رابطه‌ی بامزه‌اش با شخصیت‌هایی مثل ریمو، باعث شده یکی از محبوب‌ترین شخصیت‌های دنیا‌ی توهو باشه.",
+                    "topimages": ["/chars/marisa/marisa1.png", "/chars/marisa/marisa2.png"],
+                    "songs" : [{"name": "Love Colored Master Spark!:", "url": "/chars/marisa/theme.ogg"}],
+                    "fansongs": ["RNmlUFhNWw8"],
+                    "sliderimages": ["/chars/marisa/slider1.jpg", "/chars/marisa/slider2.jpg", "/chars/marisa/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Marisa_Kirisame"]
+                }
+            ]
+        },
+        {
+            "name": "th6",
+            "altname": "Touhou 6",
+            "url": "/characters",
+            "items": [
+                {
+                    "name": "Cirno",
+                    "prt": "/chars/cirno/portrait.png",
+                    "url": "/characters/cirno",
+                    "fullname": "チルノ Cirno",
+                    "race": "پری",
+                    "description": "چیرنو یه پری یخی بازیگوش و پرانرژیه که خودش رو «باهوش‌ترین» موجود گنسوکیو می‌دونه! با اینکه از نظر قدرت جزو شخصیت‌های ضعیف‌تر به حساب میاد، ولی اعتماد‌به‌نفس بالا و حضور بامزه‌ش باعث شده یکی از محبوب‌ترین شخصیت‌های توهو بشه. چیرنو توانایی کنترل یخ و سرما رو داره و معمولاً اطراف دریاچه‌ی مه‌آلود پیدا می‌شه. عدد ⑨ هم به شوخی به عنوان «شماره‌ی سادگی» بهش نسبت داده شده!",
+                    "topimages": [],
+                    "songs" : [{"name": "Beloved tomboyish girl:", "url": "/chars/cirno/theme.ogg"}],
+                    "fansongs": ["GNeyqFfXf7k", "7h7bnYA1LXE", "e4WnqqwdrcU"],
+                    "sliderimages": ["/chars/cirno/slider1.jpg", "/chars/cirno/slider2.jpg", "/chars/cirno/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Cirno"],
+                    "leftimgoffset": "100%"
+                },
+                {
+                    "name": "Remilia",
+                    "prt": "/chars/remilia/portrait.png",
+                    "url": "/characters/remilia",
+                    "fullname": "Remilia Scarlet",
+                    "race": "خون‌آشام",
+                    "description": "رمیلیا یه خون‌آشام قدرتمند و بانوی عمارت اسکارلت در گنسوکیوئه. با اینکه ظاهرش شبیه یه دختر بچه‌ست، ولی در واقع سنی چند صد ساله داره! شخصیتش مغرور، باوقار و گاهی هم خودرأیه، اما رفتارش همیشه جدی نیست—گاهی هم بامزه و حتی کودکانه می‌شه. قدرت اصلی رمیلیا کنترل سرنوشت‌هاست، و با حمله‌ی معروفش Spear the Gungnir شناخته می‌شه. خواهر کوچیک‌ترش، فلاندره، هم یکی از ساکنان مرموز عمارتشه.",
+                    "topimages": [],
+                    "songs": [{"name": "Septette for a Dead Princess", "url": "/chars/remilia/theme.ogg"}],
+                    "fansongs": ["7h7bnYA1LXE", "9r-NyQ_DCx4"],
+                    "sliderimages": ["/chars/remilia/slider1.jpg", "/chars/remilia/slider2.jpg", "/chars/remilia/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Remilia_Scarlet"],
+                    "leftimgoffset": "85% 10%"
+                },
+                {
+                    "name": "Flandre",
+                    "prt": "/chars/flandre/portrait.png",
+                    "url": "/characters/flandre",
+                    "fullname": "Flandre Scarlet",
+                    "race": "خون‌آشام",
+                    "description": "فلاندره خواهر کوچکتر رمیلیا و یکی از مرموزترین شخصیت‌های توهوئه. با اینکه ظاهری معصوم و کودکانه داره، قدرتش بسیار زیاده و کنترلش سخته؛ به همین دلیل سال‌هاست در زیرزمین عمارت اسکارلت زندانی شده. فلاندره شخصیتی ترکیبی از معصومیت، جنون و کنجکاوی داره. حمله‌ی معروفش Laevatein و توانایی نابود کردن هر چیزی با شناخت \"هسته‌ی وجودی\" اون، از نمادهای قدرت ترسناکشه. با همه‌ی این‌ها، هنوز هم یه کودک تنهاست که دنبال بازی و ارتباط با دیگرانه.",
+                    "topimages": [],
+                    "songs": [{"name": "U.N. Owen Was Her", "url": "/characters/flandre/theme.ogg"}],
+                    "fansongs": ["cvEC00eLkns"],
+                    "sliderimages": ["/chars/flandre/slider1.jpg", "/chars/flandre/slider2.jpg", "/chars/flandre/slider3.jpg"],
+                    "wikiurl": ["https://en.touhouwiki.net/wiki/Flandre_Scarlet"],
+                    "leftimgoffset": "10%"
+                },
+                {
+                    "name": "Sakuya",
+                    "prt": "/chars/sakuya/portrait.png",
+                    "url": "/characters/sakuya"
+                },
+                {
+                    "name": "Patchouli",
+                    "prt": "/chars/patchouli/portrait.png",
+                    "url": "/characters/patchouli"
+                },
+                {
+                    "name": "Meiling",
+                    "prt": "/chars/meiling/portrait.png",
+                    "url": "/characters/meiling"
+                }
+            ]
+        },
+        {
+            "name": "th7",
+            "altname": "Touhou 7",
+            "url": "/characters",
+            "items": [
+                {
+                    "name": "Chen",
+                    "prt": "/chars/chen/portrait.png",
+                    "url": "/characters/chen"
+                },
+                {
+                    "name": "Alice",
+                    "prt": "/chars/alice/portrait.png",
+                    "url": "/characters/alice"
+                },
+                {
+                    "name": "Youmu",
+                    "prt": "/chars/youmu/portrait.png",
+                    "url": "/characters/youmu"
+                },
+                {
+                    "name": "Yuyuko",
+                    "prt": "/chars/yuyuko/portrait.png",
+                    "url": "/characters/yuyuko"
+                },
+                {
+                    "name": "Yukari",
+                    "prt": "/chars/yukari/portrait.png",
+                    "url": "/characters/yukari"
+                }
+            ]
+        },
+        {
+            "name": "th8",
+            "altname": "Touhou 8",
+            "url": "/characters",
+            "items": [
+                {
+                    "name": "Tewi",
+                    "prt": "/chars/tewi/portrait.png",
+                    "url": "/characters/tewi"
+                },
+                {
+                    "name": "Reisen",
+                    "prt": "/chars/reisen/portrait.png",
+                    "url": "/characters/reisen"
+                }
+            ]
+        }
+    ]
+}
