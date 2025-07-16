@@ -3,6 +3,7 @@ import Footer from '../../components/Footer'
 import ImageSlider from '../../components/ImageSlider'
 import TopBar from '../../components/TopBar'
 import YoutubeEmbed from '../../components/YoutubeEmbed'
+import CategoryBlock from '../../components/CategoryBlock'
 const BaseCharacterPage = (props) => {
     console.log(props.items.topimages)
     return (<><div className={`scheme-${props.items.name.toLowerCase()} w-full`}>
@@ -46,11 +47,19 @@ const BaseCharacterPage = (props) => {
                     </>)
                     })}
                 </div>
-                <div className="text-2xl text-right w-full mt-4 mb-4">چند تا فن کاور:</div>
+                <div className="text-2xl text-right w-full mt-4 mb-4">فن کاورها:</div>
                 <div className="w-full flex flex-row flex-auto flex-wrap items-center justify-center pt-6 pb-6 ">
-                    {props.items.fansongs.map(song => {
+                    {props.items.fansongs?.map(song => {
                         return <YoutubeEmbed key={song} id={song} />
                     })}
+                </div>
+                <div className="text-2xl text-right w-full mt-4 mb-4">فن گیم ها</div>
+                 <div className='w-full flex flex-row flex-auto flex-warp items-center justify-center pt-6 pb-6'>
+                {props.items.fangames?.map(game => {
+                    return <CategoryBlock url={game.url} blank={true} title={game.name} img={game.prt}/>
+                    
+                })
+                }
                 </div>
                 {props.children}
                 <div dir="ltr" className="rounded-xl">

@@ -5,7 +5,6 @@ import locale from '../locale.json'
 import CategoryBlock from '../components/CategoryBlock'
 import TopBar from '../components/TopBar'
 import Footer from '../components/Footer'
-import { AnimateEnter2 } from '../components/AnimateEnter'
 
 let images = ["/slider/top1.jpg", "/slider/top2.jpg", "/slider/top3.jpg", "/slider/top4.jpg"]
 

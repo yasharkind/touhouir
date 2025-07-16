@@ -7,10 +7,7 @@ import { BrowserRouter, HashRouter, Route, Routes } from 'react-router'
 import RedirectRoot from './pages/RedirectRoot.jsx'
 import WIP from './pages/WIP.jsx'
 import "flowbite/dist/flowbite.css";
-import Reimu from './pages/Characters/Reimu.jsx'
-import Marisa from './pages/Characters/Marisa.jsx'
 import CharactersPage from './pages/CharactersPage.jsx'
-import ChatPage from './pages/ChatPage.jsx'
 import items from "./items.json"
 import BaseCharacterPage from './pages/Characters/BaseCharacterPage.jsx'
 

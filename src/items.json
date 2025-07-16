@@ -90,10 +90,24 @@
                     "race": "انسان",
                     "description": "ریمو نگهبان معبد هاكوره‌ای و شخصیت اصلی مجموعه توهوئه. اون دختری آروم، خونسرد و در عین حال قدرتمنده که وظیفه‌اش حفظ تعادل بین انسان‌ها و موجودات ماورایی در گنسوکیوئه. با اینکه همیشه درگیر حل کردن مشکلات و اتفاقات عجیب می‌شه، معمولاً با کم‌ترین زحمت و بیش‌ترین موفقیت از پسشون برمیاد! ریمو به پرواز کردن، نوشیدن چای و گرفتن نذری (!) علاقه داره و تکنیک مشهورش Yin-Yang Orb بخشی از سبک مبارزه‌ی اونه.",
                     "topimages": [],
-                    "songs" : [{"name": "Maiden's Capriccio ~ Dream Battle:", "url": "/chars/reimu/theme.ogg"}],
-                    "fansongs": ["iBr_Y579HaA", "aaNPn70htqs"],
-                    "sliderimages": ["/chars/reimu/slider1.jpg", "/chars/reimu/slider2.jpg", "/chars/reimu/slider3.jpg"],
-                    "wikiurl": ["https://en.touhouwiki.net/wiki/Reimu_Hakurei"],
+                    "songs": [
+                        {
+                            "name": "Maiden's Capriccio ~ Dream Battle:",
+                            "url": "/chars/reimu/theme.ogg"
+                        }
+                    ],
+                    "fansongs": [
+                        "iBr_Y579HaA",
+                        "aaNPn70htqs"
+                    ],
+                    "sliderimages": [
+                        "/chars/reimu/slider1.jpg",
+                        "/chars/reimu/slider2.jpg",
+                        "/chars/reimu/slider3.jpg"
+                    ],
+                    "wikiurl": [
+                        "https://en.touhouwiki.net/wiki/Reimu_Hakurei"
+                    ],
                     "leftimgoffset": "60% 25%"
                 },
                 {
@@ -103,11 +117,27 @@
                     "fullname": "霧雨魔理沙 Marisa Kirisame",
                     "race": "انسان",
                     "description": "ماریسا یک جادوگر معمولی، یکی از دو شخصیت اصلی بازی های توهو هست که از بازی دوم وارد توهو شد.  ماریسا شخصیتی پرانرژی، خودجوش و گاهی هم لجباز داره، و به جمع‌آوری کتاب‌ها و آیتم‌های جادویی (حتی اگر صاحبشون نباشه!) علاقه‌منده. حضور پررنگش تو بیشتر بازی‌ها و رابطه‌ی بامزه‌اش با شخصیت‌هایی مثل ریمو، باعث شده یکی از محبوب‌ترین شخصیت‌های دنیا‌ی توهو باشه.",
-                    "topimages": ["/chars/marisa/marisa1.png", "/chars/marisa/marisa2.png"],
-                    "songs" : [{"name": "Love Colored Master Spark!:", "url": "/chars/marisa/theme.ogg"}],
-                    "fansongs": ["RNmlUFhNWw8"],
-                    "sliderimages": ["/chars/marisa/slider1.jpg", "/chars/marisa/slider2.jpg", "/chars/marisa/slider3.jpg"],
-                    "wikiurl": ["https://en.touhouwiki.net/wiki/Marisa_Kirisame"]
+                    "topimages": [
+                        "/chars/marisa/marisa1.png",
+                        "/chars/marisa/marisa2.png"
+                    ],
+                    "songs": [
+                        {
+                            "name": "Love Colored Master Spark!:",
+                            "url": "/chars/marisa/theme.ogg"
+                        }
+                    ],
+                    "fansongs": [
+                        "RNmlUFhNWw8"
+                    ],
+                    "sliderimages": [
+                        "/chars/marisa/slider1.jpg",
+                        "/chars/marisa/slider2.jpg",
+                        "/chars/marisa/slider3.jpg"
+                    ],
+                    "wikiurl": [
+                        "https://en.touhouwiki.net/wiki/Marisa_Kirisame"
+                    ]
                 }
             ]
         },
@@ -124,10 +154,32 @@
                     "race": "پری",
                     "description": "چیرنو یه پری یخی بازیگوش و پرانرژیه که خودش رو «باهوش‌ترین» موجود گنسوکیو می‌دونه! با اینکه از نظر قدرت جزو شخصیت‌های ضعیف‌تر به حساب میاد، ولی اعتماد‌به‌نفس بالا و حضور بامزه‌ش باعث شده یکی از محبوب‌ترین شخصیت‌های توهو بشه. چیرنو توانایی کنترل یخ و سرما رو داره و معمولاً اطراف دریاچه‌ی مه‌آلود پیدا می‌شه. عدد ⑨ هم به شوخی به عنوان «شماره‌ی سادگی» بهش نسبت داده شده!",
                     "topimages": [],
-                    "songs" : [{"name": "Beloved tomboyish girl:", "url": "/chars/cirno/theme.ogg"}],
-                    "fansongs": ["GNeyqFfXf7k", "7h7bnYA1LXE", "e4WnqqwdrcU"],
-                    "sliderimages": ["/chars/cirno/slider1.jpg", "/chars/cirno/slider2.jpg", "/chars/cirno/slider3.jpg"],
-                    "wikiurl": ["https://en.touhouwiki.net/wiki/Cirno"],
+                    "songs": [
+                        {
+                            "name": "Beloved tomboyish girl:",
+                            "url": "/chars/cirno/theme.ogg"
+                        }
+                    ],
+                    "fansongs": [
+                        "GNeyqFfXf7k",
+                        "7h7bnYA1LXE",
+                        "e4WnqqwdrcU"
+                    ],
+                    "fangames": [
+                        {
+                            "name": "Hero Of Ice Fairy",
+                            "prt": "/chars/cirno/game1.webp",
+                            "url": "https://store.steampowered.com/app/1955830/Touhou_Hero_of_Ice_Fairy"
+                        }
+                    ],
+                    "sliderimages": [
+                        "/chars/cirno/slider1.jpg",
+                        "/chars/cirno/slider2.jpg",
+                        "/chars/cirno/slider3.jpg"
+                    ],
+                    "wikiurl": [
+                        "https://en.touhouwiki.net/wiki/Cirno"
+                    ],
                     "leftimgoffset": "100%"
                 },
                 {
@@ -138,10 +190,25 @@
                     "race": "خون‌آشام",
                     "description": "رمیلیا یه خون‌آشام قدرتمند و بانوی عمارت اسکارلت در گنسوکیوئه. با اینکه ظاهرش شبیه یه دختر بچه‌ست، ولی در واقع سنی چند صد ساله داره! شخصیتش مغرور، باوقار و گاهی هم خودرأیه، اما رفتارش همیشه جدی نیست—گاهی هم بامزه و حتی کودکانه می‌شه. قدرت اصلی رمیلیا کنترل سرنوشت‌هاست، و با حمله‌ی معروفش Spear the Gungnir شناخته می‌شه. خواهر کوچیک‌ترش، فلاندره، هم یکی از ساکنان مرموز عمارتشه.",
                     "topimages": [],
-                    "songs": [{"name": "Septette for a Dead Princess", "url": "/chars/remilia/theme.ogg"}],
-                    "fansongs": ["7h7bnYA1LXE", "9r-NyQ_DCx4"],
-                    "sliderimages": ["/chars/remilia/slider1.jpg", "/chars/remilia/slider2.jpg", "/chars/remilia/slider3.jpg"],
-                    "wikiurl": ["https://en.touhouwiki.net/wiki/Remilia_Scarlet"],
+                    "songs": [
+                        {
+                            "name": "Septette for a Dead Princess",
+                            "url": "/chars/remilia/theme.ogg"
+                        }
+                    ],
+                    "fansongs": [
+                        "7h7bnYA1LXE",
+                        "9r-NyQ_DCx4",
+                        "qD264sfXaT8"
+                    ],
+                    "sliderimages": [
+                        "/chars/remilia/slider1.jpg",
+                        "/chars/remilia/slider2.jpg",
+                        "/chars/remilia/slider3.jpg"
+                    ],
+                    "wikiurl": [
+                        "https://en.touhouwiki.net/wiki/Remilia_Scarlet"
+                    ],
                     "leftimgoffset": "85% 10%"
                 },
                 {
@@ -152,16 +219,64 @@
                     "race": "خون‌آشام",
                     "description": "فلاندره خواهر کوچکتر رمیلیا و یکی از مرموزترین شخصیت‌های توهوئه. با اینکه ظاهری معصوم و کودکانه داره، قدرتش بسیار زیاده و کنترلش سخته؛ به همین دلیل سال‌هاست در زیرزمین عمارت اسکارلت زندانی شده. فلاندره شخصیتی ترکیبی از معصومیت، جنون و کنجکاوی داره. حمله‌ی معروفش Laevatein و توانایی نابود کردن هر چیزی با شناخت \"هسته‌ی وجودی\" اون، از نمادهای قدرت ترسناکشه. با همه‌ی این‌ها، هنوز هم یه کودک تنهاست که دنبال بازی و ارتباط با دیگرانه.",
                     "topimages": [],
-                    "songs": [{"name": "U.N. Owen Was Her", "url": "/characters/flandre/theme.ogg"}],
-                    "fansongs": ["cvEC00eLkns"],
-                    "sliderimages": ["/chars/flandre/slider1.jpg", "/chars/flandre/slider2.jpg", "/chars/flandre/slider3.jpg"],
-                    "wikiurl": ["https://en.touhouwiki.net/wiki/Flandre_Scarlet"],
+                    "songs": [
+                        {
+                            "name": "U.N. Owen Was Her",
+                            "url": "/characters/flandre/theme.ogg"
+                        }
+                    ],
+                    "fansongs": [
+                        "cvEC00eLkns",
+                        "wEwnEeq23SY",
+                        "_VH91mivTUw",
+                        "qD264sfXaT8",
+                        "YUUFtUjiblk",
+                        "YUUFtUjiblk"
+                    ],
+                    "sliderimages": [
+                        "/chars/flandre/slider1.jpg",
+                        "/chars/flandre/slider2.jpg",
+                        "/chars/flandre/slider3.jpg"
+                    ],
+                    "wikiurl": [
+                        "https://en.touhouwiki.net/wiki/Flandre_Scarlet"
+                    ],
                     "leftimgoffset": "10%"
                 },
                 {
                     "name": "Sakuya",
                     "prt": "/chars/sakuya/portrait.png",
-                    "url": "/characters/sakuya"
+                    "url": "/characters/sakuya",
+                    "fullname": "十六夜咲夜 Sakuya Izayoi",
+                    "race": "انسان",
+                    "description": "ساکویا سرپرست خدمتکاران عمارت اسکارلته و با کنترل زمان، نماد انضباط و دقت در توهو محسوب می‌شه. او با توانایی‌های خارق‌العاده‌ش، هم نظم رو در عمارت حفظ می‌کنه و هم در نبردها به کمک رمیلیا میاد. سبک سرد و محکمش همراه با ظرافت در حرکات، تصویری جذاب از قدرت و کارآیی رو به نمایش می‌ذاره.",
+                    "topimages": [],
+                    "songs": [
+                        {
+                            "name": "The Maid and the Pocket Watch of Blood",
+                            "url": "/chars/sakuya/theme1.ogg"
+                        }
+                    ],
+                    "fansongs": [
+                        "vS_a8Edde8k"
+                    ],
+                    "fangames": [
+                        {
+                            "name": "Luna Nights",
+                            "prt": "/chars/sakuya/game1.png",
+                            "url": "https://store.steampowered.com/app/851100/Touhou_Luna_Nights/"
+                        },
+                        {
+                            "name": "I Am Sakuya",
+                            "url": "https://store.steampowered.com/app/1960590/I_Am_Sakuya_Touhou_FPS_Game/",
+                            "prt": "/chars/sakuya/game2.jpg"
+                        }
+                    ],
+                    "sliderimages": ["/chars/sakuya/slider1.jpg", "/chars/sakuya/slider2.jpg", "/chars/sakuya/slider3.jpg"],
+                    "wikiurl": [
+                        "https://en.touhouwiki.net/wiki/Sakuya_Izayoi"
+                    ],
+                    "leftimgoffset": "10%"
                 },
                 {
                     "name": "Patchouli",
