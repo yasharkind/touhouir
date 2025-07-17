@@ -105,9 +105,7 @@
                         "/chars/reimu/slider2.jpg",
                         "/chars/reimu/slider3.jpg"
                     ],
-                    "wikiurl": [
-                        "https://en.touhouwiki.net/wiki/Reimu_Hakurei"
-                    ],
+                    "wikiurl": "https://en.touhouwiki.net/wiki/Reimu_Hakurei",
                     "leftimgoffset": "60% 25%"
                 },
                 {
@@ -135,9 +133,7 @@
                         "/chars/marisa/slider2.jpg",
                         "/chars/marisa/slider3.jpg"
                     ],
-                    "wikiurl": [
-                        "https://en.touhouwiki.net/wiki/Marisa_Kirisame"
-                    ]
+                    "wikiurl": "https://en.touhouwiki.net/wiki/Marisa_Kirisame"
                 }
             ]
         },
@@ -177,9 +173,7 @@
                         "/chars/cirno/slider2.jpg",
                         "/chars/cirno/slider3.jpg"
                     ],
-                    "wikiurl": [
-                        "https://en.touhouwiki.net/wiki/Cirno"
-                    ],
+                    "wikiurl": "https://en.touhouwiki.net/wiki/Cirno",
                     "leftimgoffset": "100%"
                 },
                 {
@@ -206,9 +200,7 @@
                         "/chars/remilia/slider2.jpg",
                         "/chars/remilia/slider3.jpg"
                     ],
-                    "wikiurl": [
-                        "https://en.touhouwiki.net/wiki/Remilia_Scarlet"
-                    ],
+                    "wikiurl": "https://en.touhouwiki.net/wiki/Remilia_Scarlet",
                     "leftimgoffset": "85% 10%"
                 },
                 {
@@ -238,9 +230,7 @@
                         "/chars/flandre/slider2.jpg",
                         "/chars/flandre/slider3.jpg"
                     ],
-                    "wikiurl": [
-                        "https://en.touhouwiki.net/wiki/Flandre_Scarlet"
-                    ],
+                    "wikiurl": "https://en.touhouwiki.net/wiki/Flandre_Scarlet",
                     "leftimgoffset": "10%"
                 },
                 {
@@ -273,15 +263,23 @@
                         }
                     ],
                     "sliderimages": ["/chars/sakuya/slider1.jpg", "/chars/sakuya/slider2.jpg", "/chars/sakuya/slider3.jpg"],
-                    "wikiurl": [
-                        "https://en.touhouwiki.net/wiki/Sakuya_Izayoi"
-                    ],
+                    "wikiurl": "https://en.touhouwiki.net/wiki/Sakuya_Izayoi",
                     "leftimgoffset": "10%"
                 },
                 {
                     "name": "Patchouli",
                     "prt": "/chars/patchouli/portrait.png",
-                    "url": "/characters/patchouli"
+                    "url": "/characters/patchouli",
+                    "fullname": "Patchouli Knowledge",
+                    "race": "یوکای",
+                    "description": "پچولی یک جادوگر بسیار دانا و اهل مطالعه‌ست که بیشتر وقتش رو توی کتابخونه‌ی بزرگ عمارت اسکارلت می‌گذرونه. اون به جای جنگیدن، ترجیح می‌ده تو سکوت به مطالعه‌ی جادوی عناصر مختلف بپردازه. با اینکه بدنش ضعیفه و بیماری‌های مزمن داره، ولی دانش جادوییش فوق‌العاده گسترده‌ست و می‌تونه از چندین عنصر مختلف به‌طور هم‌زمان استفاده کنه. پچولی شخصیتی آروم، کم‌حرف و کمی بداخلاق داره، اما وفادار و قابل اعتماد برای دوستانشه.",
+                    "topimages": [],
+                    "songs": [
+                        {"name": "Locked Girl ~ The Girl's Secret Room", "url": "/characters/patchouli/theme.ogg"}
+                    ],
+                    "sliderimages": ["/chars/patchouli/slider1.jpg", "/chars/patchouli/slider2.jpg", "/chars/patchouli/slider3.jpg"],
+                    "wikiurl": "https://en.touhouwiki.net/wiki/Patchouli_Knowledge",
+                    "leftimgoffset": "0% 10%"
                 },
                 {
                     "name": "Meiling",

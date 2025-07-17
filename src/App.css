@@ -20,6 +20,15 @@
   min-height: 100%;
 }
 
+button {
+  font-family: dejavu;
+  color: var(--discord-embed-shadow);
+}
+
+button:focus {
+  border: transparent;
+  outline: 0px;
+}
 
 .scheme-home {  
   --discord-embed-shadow: #290431;
@@ -82,15 +91,7 @@
   --topbar-color: #A95881;
 }
 
-.scheme-characters {
-  --discord-embed-shadow: #8C2155;
-  --topbar-color: #AED4E6;
-  --background-color-start: #AED4E6;
-  --background-color-end: #741E38;
-  --content-bg-color: #AF7595;
-  --topbar-border-color: #AFA5BE;
-  --logo-color: #5C1A1B;
-}
+
 
 .scheme-sakuya {
   --discord-embed-shadow: #45454b;
@@ -102,6 +103,25 @@
   --topbar-color: #EFEBF6;
 }
 
+.scheme-patchouli {
+  --discord-embed-shadow: #0E0E1D;
+  --logo-color: #171830; 
+  --background-color-start: #2B2C53;
+  --topbar-border-color: #3E4075;
+  --background-color-end: #463E5C;
+  --content-bg-color: #4D3B42;
+  --topbar-color: #CE9FAB;
+}
+
+.scheme-characters {
+  --discord-embed-shadow: #8C2155;
+  --topbar-color: #AED4E6;
+  --background-color-start: #AED4E6;
+  --background-color-end: #741E38;
+  --content-bg-color: #AF7595;
+  --topbar-border-color: #AFA5BE;
+  --logo-color: #5C1A1B;
+}
 @media (prefers-color-scheme: dark) {
   .scheme-home {
     --discord-embed-shadow: #d5b2e0;
@@ -175,6 +195,15 @@
   --topbar-color: #ABA8CD;
 }
 
+.scheme-patchouli {
+  --discord-embed-shadow: #CE9FAB;
+  --logo-color: #4D3B42; 
+  --background-color-start: #463E5C;
+  --topbar-border-color: #3E4075;
+  --background-color-end: #2B2C53;
+  --content-bg-color: #171830;
+  --topbar-color: #0E0E1D;
+}
 
 .scheme-characters {
   --discord-embed-shadow: #AED4E6;
@@ -251,10 +280,7 @@ a {
   color: var(--content-text-color);
 }
 
-button {
-  font-family: dejavu;
-  color: var(--discord-embed-shadow);
-}
+
 
 .wip-alert {
   display: flex;
@@ -743,7 +769,7 @@ button:hover {
 }
 
 .inner-item-container {
-  color: var(--discord-embed-shadow);
+  color: var(--background-color-start);
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -922,13 +948,38 @@ button:hover {
 .left-img {
   display: block;
 }
+.recent-content {
+  font-size: 16px;
+}
+
+.slider-button {
+  width: 64px;
+}
+
+.recent-shadow {
+  box-shadow: 8px 8px 32px rgb(37, 37, 37);
+}
+
 
 @media (max-width: 640px) {
   .left-img {
     display: none;
+  }
+  .recent-content {
+    font-size: 8px;
+  }
+
+.recent-shadow {
+  font-size: 12px;
+}
+
+  .slider-button {
+    width: 50px;
+    height: 64px;
   }
 }
 
 .chat-message {
   border-top: solid 2px var(--content-bg-color);
 }
+

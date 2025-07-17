@@ -5,6 +5,9 @@ import locale from '../locale.json'
 import CategoryBlock from '../components/CategoryBlock'
 import TopBar from '../components/TopBar'
 import Footer from '../components/Footer'
+import { AnimateEnter } from '../components/AnimateEnter'
+
+const recentChanges = ["/characters/patchouli/", "/characters/sakuya/","/characters/flandre/","/characters/remilia/"]
 
 let images = ["/slider/top1.jpg", "/slider/top2.jpg", "/slider/top3.jpg", "/slider/top4.jpg"]
 
@@ -18,6 +21,16 @@ const HomePage = () => {
 				</div>
 			</div>
 			<TopBar />
+			<div className='absolute z-2 right-0'>
+			<AnimateEnter>
+			<div className='bg-6 color-3 p-4 m-4 border-4 rounded-xl recent-shadow' dir='rtl'>
+				آخرین آپدیت ها
+				{recentChanges.map(url => {
+					return <a className='dejavu block recent-content' href={url}>{url}</a>
+				})}
+			</div>
+			</AnimateEnter>
+			</div>
 			<ImageSlider images={images} />
 			<div className="fade" />
 			<div className="bg">
