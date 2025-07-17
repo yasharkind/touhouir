@@ -275,7 +275,7 @@
                     "description": "پچولی یک جادوگر بسیار دانا و اهل مطالعه‌ست که بیشتر وقتش رو توی کتابخونه‌ی بزرگ عمارت اسکارلت می‌گذرونه. اون به جای جنگیدن، ترجیح می‌ده تو سکوت به مطالعه‌ی جادوی عناصر مختلف بپردازه. با اینکه بدنش ضعیفه و بیماری‌های مزمن داره، ولی دانش جادوییش فوق‌العاده گسترده‌ست و می‌تونه از چندین عنصر مختلف به‌طور هم‌زمان استفاده کنه. پچولی شخصیتی آروم، کم‌حرف و کمی بداخلاق داره، اما وفادار و قابل اعتماد برای دوستانشه.",
                     "topimages": [],
                     "songs": [
-                        {"name": "Locked Girl ~ The Girl's Secret Room", "url": "/characters/patchouli/theme.ogg"}
+                        {"name": "Locked Girl ~ The Girl's Secret Room", "url": "/chars/patchouli/theme.ogg"}
                     ],
                     "sliderimages": ["/chars/patchouli/slider1.jpg", "/chars/patchouli/slider2.jpg", "/chars/patchouli/slider3.jpg"],
                     "wikiurl": "https://en.touhouwiki.net/wiki/Patchouli_Knowledge",
