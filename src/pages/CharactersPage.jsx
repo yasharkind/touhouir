@@ -3,15 +3,23 @@ import CategoryBlock from '../components/CategoryBlock'
 import TopBar from '../components/TopBar'
 import Footer from '../components/Footer'
 import items from "../items.json"
+import { Helmet } from 'react-helmet'
 
 
 const CharactersPage = () => {
     return (<>
+    <Helmet>
+        <title>شخصیت‌های توهو | بیوگرافی به فارسی</title>
+        <meta name='description' content="معرفی شخصیت‌های اصلی و محبوب توهو مثل ریمو، ماریسا، رمیلیا، سیرنو و دیگران. داستان، قدرت‌ها و رابطه‌ها به زبان ساده و فارسی." />
+    </Helmet>
         <div className="scheme-characters">
 
             <TopBar />
             <div className="bg">
-                
+                <h1>
+                    شخصیت‌های توهو
+                </h1>
+                <br />
                 {items.charitems.map(category => {
                     {if (!category.items) return}
                     return <><div className="text-3xl dejavu color-7">

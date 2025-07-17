@@ -6,6 +6,7 @@ import CategoryBlock from '../components/CategoryBlock'
 import TopBar from '../components/TopBar'
 import Footer from '../components/Footer'
 import { AnimateEnter } from '../components/AnimateEnter'
+import { Helmet } from 'react-helmet'
 
 const recentChanges = ["/characters/patchouli/", "/characters/sakuya/","/characters/flandre/","/characters/remilia/"]
 
@@ -14,6 +15,10 @@ let images = ["/slider/top1.jpg", "/slider/top2.jpg", "/slider/top3.jpg", "/slid
 const HomePage = () => {
 	const [wipDisplay, toggleWipDisplay] = useState("")
 	return (<>
+	<Helmet>
+		<title>توهو چیست؟ | معرفی دنیای توهو به فارسی</title>
+		<meta name="description" content="همه چیز درباره‌ی دنیای توهو: معرفی بازی‌ها، شخصیت‌ها، موسیقی‌ها و آثار طرفداری، مخصوص فارسی‌زبانانی که به انیمه و گیم علاقه دارن."></meta>
+	</Helmet>
 		<div className="scheme-home">
 			<div className={`wip-alert ${wipDisplay}`} onClick={() => { toggleWipDisplay(() => "invisible") }} dir='rtl'>
 				<div style={{ alignSelf: "center" }}>
