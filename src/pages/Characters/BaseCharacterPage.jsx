@@ -7,10 +7,11 @@ import CategoryBlock from '../../components/CategoryBlock'
 import { Helmet } from 'react-helmet'
 const BaseCharacterPage = (props) => {
     console.log(props.items.topimages)
+    let slicedDescription = props.items.description.slice(0,100) + "..."
     return (<>
     <Helmet>
         <meta property="og:title" content={props.items.fullname} />
-        <meta property="og:description" content={props.items.description} />
+        <meta property="og:description" content={slicedDescription} />
         <meta property="og:image" content={props.items.prt} />
         <meta property="og:url" content={props.items.url} />
     </Helmet>
