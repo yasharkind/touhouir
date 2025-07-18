@@ -16,6 +16,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
+  scrollbar-color:  rgb(55, 189, 199) rgb(201, 128, 128);
+  scrollbar-width: thin;
 }
 
 a {

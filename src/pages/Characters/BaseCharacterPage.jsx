@@ -4,9 +4,17 @@ import ImageSlider from '../../components/ImageSlider'
 import TopBar from '../../components/TopBar'
 import YoutubeEmbed from '../../components/YoutubeEmbed'
 import CategoryBlock from '../../components/CategoryBlock'
+import { Helmet } from 'react-helmet'
 const BaseCharacterPage = (props) => {
     console.log(props.items.topimages)
-    return (<><div className={`scheme-${props.items.name.toLowerCase()} w-full`}>
+    return (<>
+    <Helmet>
+        <meta property="og:title" content={props.items.fullname} />
+        <meta property="og:description" content={props.items.description} />
+        <meta property="og:image" content={props.items.prt} />
+        <meta property="og:url" content={props.items.url} />
+    </Helmet>
+    <div className={`scheme-${props.items.name.toLowerCase()} w-full`}>
         <TopBar />
         <div className="bg" >
             <div className="flex flex-row" >

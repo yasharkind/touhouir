@@ -10,7 +10,11 @@ const CharactersPage = () => {
     return (<>
     <Helmet>
         <title>شخصیت‌های توهو | بیوگرافی به فارسی</title>
-        <meta name='description' content="معرفی شخصیت‌های اصلی و محبوب توهو مثل ریمو، ماریسا، رمیلیا، سیرنو و دیگران. داستان، قدرت‌ها و رابطه‌ها به زبان ساده و فارسی." />
+        <meta name='description' content="معرفی شخصیت‌های اصلی و محبوب توهو. داستان، قدرت‌ها و رابطه‌ها به فارسی." />
+        <meta property="og:title" content="touhou iran" />
+        <meta property="og:description" content="معرفی شخصیت‌های توهو" />
+        <meta property="og:image" content="https://touhou.ir/icon.png" />
+        <meta property="og:url" content="https://touhou.ir" />
     </Helmet>
         <div className="scheme-characters">
 

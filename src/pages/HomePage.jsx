@@ -18,6 +18,10 @@ const HomePage = () => {
 	<Helmet>
 		<title>توهو چیست؟ | معرفی دنیای توهو به فارسی</title>
 		<meta name="description" content="همه چیز درباره‌ی دنیای توهو: معرفی بازی‌ها، شخصیت‌ها، موسیقی‌ها و آثار طرفداری، مخصوص فارسی‌زبانانی که به انیمه و گیم علاقه دارن."></meta>
+		<meta property="og:title" content="touhou iran" />
+  		<meta property="og:description" content="کامیونیتی فارسی توهو" />
+  		<meta property="og:image" content="https://touhou.ir/icon.png" />
+  		<meta property="og:url" content="https://touhou.ir" />
 	</Helmet>
 		<div className="scheme-home">
 			<div className={`wip-alert ${wipDisplay}`} onClick={() => { toggleWipDisplay(() => "invisible") }} dir='rtl'>
