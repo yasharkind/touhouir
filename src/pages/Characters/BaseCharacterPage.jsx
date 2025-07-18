@@ -10,6 +10,7 @@ const BaseCharacterPage = (props) => {
     let slicedDescription = props.items.description.slice(0,100) + "..."
     return (<>
     <Helmet>
+        <title>معرفی {props.items.fullname} توهو | بیوگرافی به فارسی</title>
         <meta property="og:title" content={props.items.fullname} />
         <meta property="og:description" content={slicedDescription} />
         <meta property="og:image" content={props.items.prt} />
