@@ -114,6 +114,16 @@ button:focus {
   --topbar-color: #CE9FAB;
 }
 
+.scheme-meiling {
+  --discord-embed-shadow: #190C1A;
+  --logo-color: #413D47; 
+  --background-color-start: #2D3D61;
+  --topbar-border-color: #183D7B;
+  --background-color-end: #643E76;
+  --content-bg-color: #B03E71;
+  --topbar-color: #CD778F;
+}
+
 .scheme-characters {
   --discord-embed-shadow: #8C2155;
   --topbar-color: #AED4E6;
@@ -204,6 +214,16 @@ button:focus {
   --background-color-end: #2B2C53;
   --content-bg-color: #171830;
   --topbar-color: #0E0E1D;
+}
+
+.scheme-meiling {
+  --discord-embed-shadow: #CD778F;
+  --logo-color: #B03E71; 
+  --background-color-start: #643E76;
+  --topbar-border-color: #183D7B;
+  --background-color-end: #2D3D61;
+  --content-bg-color: #413D47;
+  --topbar-color: #190C1A;
 }
 
 .scheme-characters {

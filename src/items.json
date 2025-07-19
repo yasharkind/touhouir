@@ -284,7 +284,17 @@
                 {
                     "name": "Meiling",
                     "prt": "/chars/meiling/portrait.png",
-                    "url": "/characters/meiling"
+                    "url": "/characters/meiling",
+                    "fullname": "紅 美鈴 Hong Meirin",
+                    "race": "یوکای",
+                    "description": "هونگ می‌لینگ نگهبان دروازه‌ی عمارت اسکارلت است. او دختری مهربان و آرام با توانایی کنترل \"چی\" (انرژی درونی) است و سبک مبارزه‌اش ترکیبی از هنرهای رزمی چینی و جادوست. با اینکه شغلش نگهبانیه، اما اغلب به خاطر خواب‌آلود بودن یا حواس‌پرتی‌، اجازه می‌ده دیگران از دروازه رد بشن! شخصیتی خوش‌قلب و صلح‌طلبه که بیشتر ترجیح می‌ده با گفتگو مشکلات رو حل کنه، اما وقتی لازم باشه، مهارت زیادی توی مبارزه داره. با اینکه توی داستان‌های رسمی حضور زیادی نداره، بین هواداران بسیار محبوبه، مخصوصاً به خاطر وفاداریش به عمارت اسکارلت و رابطه‌ی دوستانه‌ش با شخصیت‌هایی مثل ساکویا و فلاندره.",
+                    "topimages": [],
+                    "songs": [
+                        {"name": "Shanghai Alice of Meiji 17", "url": "/chars/meiling/theme.ogg"}
+                    ],
+                    "sliderimages": ["/chars/meiling/slider1.jpg", "/chars/meiling/slider2.jpg", "/chars/meiling/slider3.jpg"],
+                    "wikiurl": "https://en.touhouwiki.net/wiki/Hong_Meiling",
+                    "leftimgoffset": "30% 0%"
                 }
             ]
         },
