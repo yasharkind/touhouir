@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 import { AnimateEnter } from '../components/AnimateEnter'
 import { Helmet } from 'react-helmet'
 
-const recentChanges = ["/characters/patchouli/", "/characters/sakuya/","/characters/flandre/","/characters/remilia/"]
+const recentChanges = ["/characters/meiling/", "/characters/patchouli/", "/characters/sakuya/","/characters/flandre/"]
 
 let images = ["/slider/top1.jpg", "/slider/top2.jpg", "/slider/top3.jpg", "/slider/top4.jpg"]
 
